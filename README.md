@@ -1,5 +1,9 @@
 # Adoção Pet Lins
 
+![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-blue)
+![Ano Inicial](https://img.shields.io/badge/Ano_Inicial-2026-green)
+![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-orange)
+
 Projeto de extensão desenvolvido por alunos do 
     curso de Sistemas para Internet da Fatec Lins,
     consistindo no desenvolvimento de um site estático para a ONG Adoção Lins,
@@ -7,8 +11,18 @@ Projeto de extensão desenvolvido por alunos do
     
 ## 👥 Integrantes do grupo
 
- | Nome | Função | |Anderson | | |Mateus Pires | | |Luis Henrique | | |Rafael Oliveira | | |Murilo Brites | | |Filipe | | |Gabriel | | >
+ Foto | Nome | GitHub | Função / Contribuição |
+| :---: | :--- | :--- | :--- |
+| <img src="https://wsrv.nl/?url=https://github.com/MateusPires11.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Mateus De Oliveira Pires** | [@MateusPires11](https://github.com/MateusPires11) | Scrum Master / Dev Frontend |
+| <img src="https://wsrv.nl/?url=https://github.com/andersonlucas294.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Anderson Lucas** | [@andersonlucas294](https://github.com/andersonlucas294) | Dev Frontend |
+| <img src="https://wsrv.nl/?url=https://github.com/LuisHenrique676.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Luis Henrique** | [@LuisHenrique676](https://github.com/LuisHenrique676) | Dev Frontend |
+| <img src="https://wsrv.nl/?url=https://github.com/murillobfranca10.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Murillo Franca** | [@murillobfranca10](https://github.com/murillobfranca10) | Dev Frontend |
+| <img src="https://wsrv.nl/?url=https://github.com/raphael2222226869.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Rafa Amorim** | [@raphael2222226869](https://github.com/raphael2222226869) | UI-UX Desing |
         
+## 🔗 Links Úteis
+* **🌐 Aplicação em Produção (Deploy):** [projetointegradorsi.github.io/ONG-Animal](https://projetointegradorsi.github.io/ONG-Animal/)
+* **🎨 Protótipo no Figma:** [Figma](https://www.figma.com/design/c1eJU1BHgjMGCrA4goyZNI/Projeto-Integrador?node-id=0-1&t=WjAuziLAYwz8NAwe-1)
+
 ## 🗂️ Estrutura do repositório
 
 ```
@@ -62,6 +76,24 @@ git push origin sua-branch
 Após o push,
 abra um ** Pull Request ** para que o professor possa revisar e aprovar as alterações antes do 
     merge na branch `main`.## 📌 Observações
+
+
+## 📊 Estatísticas de Contribuição
+
+Confira as contribuições de cada integrante no projeto.
+
+<!-- COMMITS-START -->
+| Integrante | Commits | Arquivos únicos | Alterações em arquivos | Linhas adicionadas | Linhas removidas |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Mateus De Oliveira Pires | 53 | 45 | 150 | +5786 | -3667 |
+| Anderson Lucas | 5 | 8 | 8 | +1429 | -24 |
+| Luis Henrique | 2 | 9 | 9 | +542 | -769 |
+| Murillo Franca | 0 | 0 | 0 | +0 | -0 |
+| Rafa Amorim | 0 | 0 | 0 | +0 | -0 |
+<!-- COMMITS-END -->
+
+*Estatísticas atualizadas automaticamente pelo GitHub Actions.*
+
 
 
 - O site deve ser desenvolvido apenas com ** HTML e CSS ** — sem JavaScript. - Todos os integrantes devem realizar commits ao longo do 
