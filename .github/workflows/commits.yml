@@ -1,0 +1,118 @@
+name: Estatísticas do Projeto
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "README.md"
+
+permissions:
+  contents: write
+
+jobs:
+  estatisticas:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Calcular estatísticas
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require("fs");
+
+            const integrantes = [
+              { nome: "Mateus De Oliveira Pires", usuario: "MateusPires11" },
+              { nome: "Anderson Lucas", usuario: "andersonlucas294" },
+              { nome: "Luis Henrique", usuario: "LuisHenrique676" },
+              { nome: "Murillo Franca", usuario: "murillobfranca10" },
+              { nome: "Rafa Amorim", usuario: "raphael2222226869" }
+            ];
+
+            const { owner, repo } = context.repo;
+            const tabela = [
+              "| Integrante | Commits | Arquivos únicos | Alterações em arquivos | Linhas adicionadas | Linhas removidas |",
+              "| :--- | ---: | ---: | ---: | ---: | ---: |"
+            ];
+
+            for (const integrante of integrantes) {
+              let commits = [];
+              let pagina = 1;
+
+              while (true) {
+                const resposta = await github.rest.repos.listCommits({
+                  owner,
+                  repo,
+                  author: integrante.usuario,
+                  per_page: 100,
+                  page: pagina
+                });
+
+                commits.push(...resposta.data);
+
+                if (resposta.data.length < 100) break;
+                pagina++;
+              }
+
+              const arquivosUnicos = new Set();
+              let alteracoesArquivos = 0;
+              let linhasAdicionadas = 0;
+              let linhasRemovidas = 0;
+
+              for (const commit of commits) {
+                const detalhes = await github.rest.repos.getCommit({
+                  owner,
+                  repo,
+                  ref: commit.sha
+                });
+
+                for (const arquivo of detalhes.data.files || []) {
+                  arquivosUnicos.add(arquivo.filename);
+                  alteracoesArquivos++;
+                  linhasAdicionadas += arquivo.additions || 0;
+                  linhasRemovidas += arquivo.deletions || 0;
+                }
+              }
+
+              tabela.push(
+                `| ${integrante.nome} | ${commits.length} | ${arquivosUnicos.size} | ${alteracoesArquivos} | +${linhasAdicionadas} | -${linhasRemovidas} |`
+              );
+            }
+
+            const inicio = "<!-- COMMITS-START -->";
+            const fim = "<!-- COMMITS-END -->";
+            const readme = fs.readFileSync("README.md", "utf8");
+
+            if (!readme.includes(inicio) || !readme.includes(fim)) {
+              throw new Error("Os marcadores de estatísticas não foram encontrados no README.");
+            }
+
+            const novaSecao = `${inicio}\n${tabela.join("\n")}\n${fim}`;
+
+            const atualizado = readme.replace(
+              /<!-- COMMITS-START -->[\s\S]*?<!-- COMMITS-END -->/,
+              novaSecao
+            );
+
+            fs.writeFileSync("README.md", atualizado);
+
+      - name: Salvar estatísticas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "Estatísticas já atualizadas."
+            exit 0
+          fi
+
+          git commit -m "docs: atualizar estatísticas do projeto"
+          git push
