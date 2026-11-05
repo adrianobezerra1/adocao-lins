@@ -1,4 +1,4 @@
-import { animais } from '../dados/dados-animais.js';
+import { animais } from '../../data/dados-animais.js';
 
 document.addEventListener('DOMContentLoaded', function() {
     rederizaranimal(animais);
