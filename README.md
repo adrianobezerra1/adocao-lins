@@ -31,12 +31,37 @@ refugio-pet-lins/
 ├── ux-ui/                  ← Análise de UX/UI com auxílio de IA
 ├── prototipo/              ← Wireframe e protótipo do site
 └── codigo/                 ← Esboço do código HTML e CSS
+    adocao-lins/
+    │
     ├── index.html
-    ├── animais.html
-    ├── contato.html
-    ├── css/
-    │   └── style.css
-    └── img//
+    │
+    ├── pages/
+    │   ├── animais.html
+    │   ├── perfil-animal.html
+    │   ├── contato.html
+    │   └── sobre.html
+    │
+    ├── assets/
+    │   ├── css/
+    │   │   ├── global.css
+    │   │   ├── header.css
+    │   │   └── footer.css
+    │   │
+    │   ├── js/
+    │   │   ├── main.js
+    │   │   ├── animais.js
+    │   │   ├── perfil-animal.js
+    │   │   └── contato.js
+    │   │
+    │   └── img/
+    │       ├── animais/
+    │       ├── banners/
+    │       └── icons/
+    │
+    ├── data/
+    │   └── animais.js
+    │
+    └── README.md
 ```
 
 ## 📋 Etapas do 
