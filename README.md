@@ -31,12 +31,37 @@ refugio-pet-lins/
 ├── ux-ui/                  ← Análise de UX/UI com auxílio de IA
 ├── prototipo/              ← Wireframe e protótipo do site
 └── codigo/                 ← Esboço do código HTML e CSS
+    adocao-lins/
+    │
     ├── index.html
-    ├── animais.html
-    ├── contato.html
-    ├── css/
-    │   └── style.css
-    └── img//
+    │
+    ├── pages/
+    │   ├── animais.html
+    │   ├── perfil-animal.html
+    │   ├── contato.html
+    │   └── sobre.html
+    │
+    ├── assets/
+    │   ├── css/
+    │   │   ├── global.css
+    │   │   ├── header.css
+    │   │   └── footer.css
+    │   │
+    │   ├── js/
+    │   │   ├── main.js
+    │   │   ├── animais.js
+    │   │   ├── perfil-animal.js
+    │   │   └── contato.js
+    │   │
+    │   └── img/
+    │       ├── animais/
+    │       ├── banners/
+    │       └── icons/
+    │
+    ├── data/
+    │   └── animais.js
+    │
+    └── README.md
 ```
 
 ## 📋 Etapas do 
@@ -85,7 +110,7 @@ Confira as contribuições de cada integrante no projeto.
 <!-- COMMITS-START -->
 | Integrante | Commits | Arquivos únicos | Alterações em arquivos | Linhas adicionadas | Linhas removidas |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| Mateus De Oliveira Pires | 3 | 301 | 302 | +1126 | -2 |
+| Mateus De Oliveira Pires | 2 | 300 | 600 | +1124 | -1124 |
 | Anderson Lucas | 0 | 0 | 0 | +0 | -0 |
 | Luis Henrique | 0 | 0 | 0 | +0 | -0 |
 | Murillo Franca | 0 | 0 | 0 | +0 | -0 |
