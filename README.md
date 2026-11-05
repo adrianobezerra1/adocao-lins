@@ -124,4 +124,4 @@ Confira as contribuições de cada integrante no projeto.
 - O site deve ser desenvolvido apenas com ** HTML e CSS ** — sem JavaScript. - Todos os integrantes devem realizar commits ao longo do 
     projeto.## 🏫 Disciplina
 
-Desenvolvimento Web 1 — Curso de Sistemas para Internet — Fatec Lins — 2026
+Desenvolvimento Web 1 — Curso de Sistemas para Internet — Fatec Lins  2026
