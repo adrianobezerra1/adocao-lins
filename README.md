@@ -110,11 +110,11 @@ Confira as contribuições de cada integrante no projeto.
 <!-- COMMITS-START -->
 | Integrante | Commits | Arquivos únicos | Alterações em arquivos | Linhas adicionadas | Linhas removidas |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| Mateus De Oliveira Pires | 9 | 304 | 1207 | +1131 | -3379 |
-| Anderson Lucas | 1 | 3 | 3 | +21 | -21 |
-| Luis Henrique | 0 | 0 | 0 | +0 | -0 |
-| Murillo Franca | 0 | 0 | 0 | +0 | -0 |
-| Rafa Amorim | 0 | 0 | 0 | +0 | -0 |
+| Mateus De Oliveira Pires | 75 | 363 | 1409 | +7799 | -7487 |
+| Anderson Lucas | 10 | 14 | 23 | +2280 | -673 |
+| Luis Henrique | 2 | 9 | 9 | +542 | -769 |
+| Murillo Franca | 3 | 2 | 4 | +79 | -28 |
+| Rafa Amorim | 3 | 9 | 14 | +0 | -0 |
 <!-- COMMITS-END -->
 
 *Estatísticas atualizadas automaticamente pelo GitHub Actions.*
