@@ -11,45 +11,39 @@
 
 <body>
     <header>
-        <div class="logo-wrapper">
-            <a href="./index.html">
-                <img src="./codigo/assets/img/icons/Logo.png" alt="logo adoção lins" class="logo">
-                <span class="site-name">ADOÇÃO LINS</span>
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html" class="ativo">Início</a></li>
-                <li><a href="./codigo/pages/animais.html">Animais</a></li>
-                <li><a href="./codigo/pages/sobre-contato.html">Sobre/Contato</a></li>
-            </ul>
-            <div class="search-bar">
-                <input type="text" placeholder="Pesquisar">
-                <button>
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19.7427 20.075L25.5167 26.0104M22.8482 12.3935C22.8482 18.4098 18.0692 23.287 12.1741 23.287C6.27894 23.287 1.5 18.4098 1.5 12.3935C1.5 6.37718 6.27894 1.5 12.1741 1.5C18.0692 1.5 22.8482 6.37718 22.8482 12.3935Z"
-                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F9FAFB" />
-                    </svg>
-                </button>
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <a href="./index.html">
+                    <img src="./codigo/assets/img/icons/Logo.png" alt="logo adoção lins" class="logo">
+                    <span class="site-name">ADOÇÃO LINS</span>
+                </a>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html" class="ativo">Início</a></li>
+                    <li><a href="./codigo/pages/animais.html">Animais</a></li>
+                    <li><a href="./codigo/pages/sobre-contato.html">Sobre/Contato</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar">
+                    <button>
 
-        </nav>
+                    </button>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
+
+        <section class="hero">
+            <video autoplay muted id="video-fundo">
+                <source src="./codigo/assets/videos/DVIDS - Video - Soldier reunites with dog after deployment.mp4"
+                    type="video/mp4">
+                Seu navegador não suporta vídeos em HTML5.
+            </video>
+        </section>
         <article>
-            <section class="hero">
-                <div class="hero-text">
-                    <h1>DÊ UMA NOVA
-                        CHANCE DE VIDA!</h1>
-                    <h3>Na nossa ONG, acreditamos que todo animal merece um lar seguro, cheio de amor e cuidado.</h3>
-                    <a href="./codigo/pages/animais.html"><button>Conheça nossos animais</button></a>
-                </div>
-                <div class="hero-image">
-                    <img src="./codigo/assets/img/banners/fotohero.png" alt="Imagem de um cachorro e um humano">
-                </div>
-            </section>
 
             <section class="animais-destaque">
                 <nav>
@@ -113,7 +107,8 @@
             <ul class="social-media">
                 <li><a href="#"><img src="./codigo/assets/img/icons/facebook.png" alt="logo facebook"></a></li>
                 <li><a href="#"><img src="./codigo/assets/img/icons/insta.png" alt="logo instagram"></a></li>
-                <li id="whatsapp"><a href="#"><img src="./codigo/assets/img/icons/WhatsApp.png" alt="logo do whatsapp"></a></li>
+                <li id="whatsapp"><a href="#"><img src="./codigo/assets/img/icons/WhatsApp.png"
+                            alt="logo do whatsapp"></a></li>
             </ul>
         </footer>
     </main>
