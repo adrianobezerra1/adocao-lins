@@ -31,7 +31,7 @@ header {
 }
 
 .logo-wrapper a {
-  color: var(--texto-claro);
+  color: var(--primaria);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -280,6 +280,7 @@ article {
   background-color: var(--cards);
   padding: 10px;
   width: 306.859px;
+  box-shadow: 0px 4px 50px 0px;
 }
 
 .cardsanimal img {
@@ -381,7 +382,7 @@ aside p {
 }
 
 aside button {
-  background-color: var(--secundaria);
+  background-color: var(--primaria);
   color: var(--texto-claro);
   border: 1px solid var(--secundaria);
   border-radius: 10px;
