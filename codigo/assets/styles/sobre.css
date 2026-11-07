@@ -3,10 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #d1328a;
     color: #333333;
     line-height: 1.6;
 }
@@ -55,6 +56,7 @@ body {
 
 .card {
     padding: 10px 0;
+    background-color: #f7f9fa;
 }
 
 .card h2, .card h3 {
@@ -78,6 +80,7 @@ body {
 .border-top-gray {
     border-top: 1px solid #e0e0e0;
     padding-top: 20px;
+    background-color: #f7f9fa;
 }
 
 .info-card {
@@ -342,3 +345,4 @@ body {
         margin: 0 10px;
     }
 }
+ 
