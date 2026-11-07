@@ -36,7 +36,7 @@ header {
 }
 
 .logo-wrapper a {
-  color: var(--primaria);
+  color: var(--secundaria);
   display: flex;
   align-items: center;
   text-decoration: none;
