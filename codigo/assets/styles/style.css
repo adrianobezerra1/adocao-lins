@@ -22,7 +22,12 @@ header {
   top: 0;
   left: 0;
   z-index: 10;
-  padding-top: 20px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 .logo-wrapper {
@@ -59,12 +64,19 @@ nav {
   justify-content: center;
 }
 
-nav ul {
+.header-nav  {
   display: flex;
   list-style: none;
   gap: 24px;
   margin: 0;
   padding: 0;
+  
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 nav ul li a {
@@ -72,6 +84,7 @@ nav ul li a {
   text-decoration: none;
   font-size: var(--text-h3);
   font-weight: bold;
+  
 }
 
 nav ul li a.ativo {
@@ -110,16 +123,19 @@ nav button:hover {
 input {
   border-radius: 7px;
   background: transparent;
+  border:none;
   border-bottom: 1px solid var(--primaria);
   width: 250px;
   height: 40px;
   padding: 10px;
   margin-right: 10px;
+  color: var(--secundaria);
+  font-size: var(--text-p);
 }
 
 input::placeholder {
   color: var(--secundaria);
-  font-size: var(--text-h3);
+  font-size: var(--text-p);
   padding-left: 10px;
 }
 
@@ -128,7 +144,7 @@ article {
   position: relative;
   z-index: 2;
   margin: 0;
-  padding: 60px 80px;
+  padding: 25px 80px;
 }
 
 .fundo {
@@ -202,10 +218,11 @@ article {
 }
 
 .btn-hero {
+  width: 456px;
+  height: 66px;
+  border: 1px solid var(--primaria);
   background-color: var(--primaria);
-  color: var(--texto-claro);
-  border-radius: 10px;
-  padding: 10px 20px;
+  border-radius: 15px;
   cursor: pointer;
   color: var(--secundaria, #F7F7FA);
   text-align: center;
@@ -215,9 +232,10 @@ article {
   font-weight: 700;
   line-height: normal;
 }
+
 .btn-hero:hover {
   transform: scale(1.05);
-  opacity: 0.8;
+
   transition: all 0.3s ease;
 }
 
@@ -236,11 +254,11 @@ article {
 
 /* ── animais destaque ── */
 .animais-destaque {
-  margin: 90px 0;
+  margin: 25px 0 45px 0;
 }
 
 .animais-destaque nav {
-  margin: 20px 0;
+  margin: 20px 0 45px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -252,6 +270,7 @@ article {
   font-size: var(--text-h3);
   font-weight: bold;
 }
+
 
 .ver-todos a {
   display: flex;
@@ -265,6 +284,11 @@ article {
 
 .ver-todos a:hover {
   opacity: 0.8;
+}
+.ver-todos a svg {
+  width: 20px;
+  height: 20px;
+  color: var(--primaria);
 }
 
 .animais {
@@ -280,6 +304,7 @@ article {
   background-color: var(--cards);
   padding: 10px;
   width: 306.859px;
+  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.25);
 }
 
 .cardsanimal img {
@@ -349,6 +374,7 @@ aside {
   justify-content: space-between;
   padding: 0 53px;
   box-sizing: border-box;
+  box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.25);
 }
 
 aside h2 {
@@ -381,9 +407,9 @@ aside p {
 }
 
 aside button {
-  background-color: var(--secundaria);
+  background-color: var(--primaria);
   color: var(--texto-claro);
-  border: 1px solid var(--secundaria);
+  border: 1px solid var(--primaria);
   border-radius: 10px;
   padding: 10px 20px;
   font-size: var(--text-h3);
@@ -401,12 +427,20 @@ aside button:hover {
 footer {
   position: relative;
   margin-top: 90px;
-  background-color: var(--secundaria);
+  background-color: var(--primaria);
   width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.footer-nav-list{
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
 }
 
 .footer-nav {
