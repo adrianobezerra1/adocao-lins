@@ -36,7 +36,7 @@ header {
 }
 
 .logo-wrapper a {
-  color: var(--texto-claro);
+  color: var(--primaria);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -304,7 +304,11 @@ article {
   background-color: var(--cards);
   padding: 10px;
   width: 306.859px;
+<<<<<<< HEAD
   box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.25);
+=======
+  box-shadow: 0px 4px 50px 0px;
+>>>>>>> b148f5b4927003dc4dd0d4c4a2ee32def82e4e11
 }
 
 .cardsanimal img {
