@@ -192,14 +192,42 @@ article {
 
 }
 
+
+.text-hero {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  padding: 100px 80px;
+}
+
+.text-hero h1 {
+  font-size: 106px;
+  font-weight: bold;
+  color: var(--primaria);
+  margin-bottom: 10px;
+}
+
+.text-hero h3 {
+  font-size: 96px;
+  font-weight: bold;
+  color: var(--secundaria);
+}
+
 .hero-conteudo {
   display: flex;
   align-items: end;
   justify-content: right;
   height: 100%;
   gap: 40%;
-  padding: 0 80px 100px;
+  padding: 0 80px;
 }
+
+.link-hero {
+  position: absolute;
+  left: 80px;
+  bottom: 15%;
+}
+
 
 .hero-conteudo svg {
   position: absolute;
@@ -226,6 +254,7 @@ article {
 }
 
 .btn-hero {
+
   width: 456px;
   height: 66px;
   border: 1px solid var(--primaria);
@@ -435,72 +464,70 @@ aside button:hover {
 
 /* ── footer ── */
 footer {
-  position: relative;
-  margin-top: 90px;
-  background-color: var(--primaria);
-  width: 100%;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+    position: relative;
+    margin-top: 90px;
+    background-color: var(--primaria);
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ativof {
+    border-bottom: 2px solid var(--secundaria);
+    padding-bottom: 4px;
 }
 
 .footer-nav-list {
-  display: flex;
-  list-style: none;
-  gap: 24px;
-  margin: 0;
-  padding: 0;
-  flex-direction: row;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 2px;
-  transition: border-color 0.2s ease;
-
-}
-
-.footer-nav-list li:hover {
-  border-bottom: 2px solid var(--secundaria);
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
 }
 
 .footer-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .footer-nav p {
-  color: var(--texto-claro);
-  font-size: var(--text-P);
-  font-weight: 400;
+    margin: 10px;;
+    color: var(--texto-claro);
+    font-size: var(--text-sm);
+    font-weight: 400;
 }
 
 .social-media {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 20px;
-  margin-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-right: 80px;
 }
 
 .social-media li a img {
-  width: 30px;
-  height: 30px;
+    width: 30px;
+    height: 30px;
 }
 
 .social-media li a img:hover {
-  transform: scale(1.05);
-  opacity: 0.8;
-  transition: all 0.3s ease;
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: all 0.3s ease;
 }
 
 #whatsapp img {
-  width: 35px;
-  height: 35px;
+    width: 35px;
+    height: 35px;
 }
+
 
 /* =========================================================
    RESPONSIVO (cabeçalho, rodapé e margens — vale p/ todas as páginas)
