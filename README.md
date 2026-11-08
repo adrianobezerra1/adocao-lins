@@ -13,7 +13,7 @@ Projeto de extensão desenvolvido por alunos do
 
  Foto | Nome | GitHub | Função / Contribuição |
 | :---: | :--- | :--- | :--- |
-| <img src="https://wsrv.nl/?url=https://github.com/MateusPires11.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Mateus De Oliveira Pires** | [@MateusPires11](https://github.com/MateusPires11) | Scrum Master / Dev Frontend |
+| <img src="https://wsrv.nl/?url=https://github.com/MateusPires11.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Mateus De Oliveira Pires** | [@MateusPires11](https://github.com/MateusPires11) | Scrum Master / Dev Frontend / UI-UX |
 | <img src="https://wsrv.nl/?url=https://github.com/andersonlucas294.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Anderson Lucas** | [@andersonlucas294](https://github.com/andersonlucas294) | Dev Frontend |
 | <img src="https://wsrv.nl/?url=https://github.com/LuisHenrique676.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Luis Henrique** | [@LuisHenrique676](https://github.com/LuisHenrique676) | Dev Frontend |
 | <img src="https://wsrv.nl/?url=https://github.com/murillobfranca10.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Murillo Franca** | [@murillobfranca10](https://github.com/murillobfranca10) | Dev Frontend |
