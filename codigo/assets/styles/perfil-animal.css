@@ -1,316 +1,314 @@
-@import '../styles/global.css';
-@import '../styles/styleguide.css';
+@import "../styles/global.css";
+@import "../styles/styleguide.css";
 
 body {
-    background-color: var(--fundo);
-    font-family: 'Roboto', sans-serif;
+  background-color: var(--fundo);
+  font-family: "Roboto", sans-serif;
 }
 
 main {
-    margin: 20px 80px;
+  margin: 20px 80px;
 }
 
 .back-link {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .back-link span {
-    font-size: var(--text-P);
-    font-weight: bold;
-    color: var(--primaria);
+  font-size: var(--text-P);
+  font-weight: bold;
+  color: var(--primaria);
 }
 
-
 .back-link svg {
-    width: 25px;
-    height: 20px;
+  width: 25px;
+  height: 20px;
 }
 
 .back-link:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
-.profile-layout {
-    display: grid;
-    grid-template-columns: 420px 1fr 280px;
-    column-gap: 40px;
-    align-items: start;
-    margin-top: 24px;
-    
+.perfil-animal {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+  height: 472px;
+  gap:39px;
+}
+.foto {
+  background-color: var(--secundaria);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 540px;
+  border-radius: 15px;
+  
+}
+.foto-principal {
+  width: 100%;
+  height: 367.682px;
+  padding: 10px;
+}
+.foto-principal img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.fotos{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 5px;
+  padding: 10px;
+}
+.fotos img {
+  width: 116px;
+  height: 79.664px;
+  border-radius: 15px;
+  object-fit: cover;
 }
 
-.photo-area {
-    grid-column: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 10px;
-    background-color: var(--cards);
-    border: 1px solid var(--secundaria);
-    border-radius: 15px;
-    box-shadow: 0 4px 50px rgb(0, 0, 0, 0.25);
+.sobre{
+  width: 500px;
+  margin-top: 40px;
+} 
+.nome-animal{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 30px;
+}
+.sobre h1{
+  font-size: var(--text-h1);
+  font-weight: bold;
 }
 
-.main-photo {
-    width: 100%;
-    height: 310px;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--secundaria);
+.pills{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.pills button{
+  background-color: var(--secundaria);
+  border: 1px solid var(--secundaria);
+  border-radius: 15px;
+  
+  width: 75px;
+  height: 40px;
+  font-size: var(--text-P);
+  font-weight: 600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.descricao h2{
+  font-size: var(--text-h2);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.descricao p{
+  font-size: var(--text-P);
+  line-height: 1.2;
+  margin-bottom: 30px;
 }
 
-.main-photo img,
-.thumb img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+.adotar{
+  display: flex;
+  flex-direction: column;
 }
-
-.thumb:hover {
-      transform: scale(1.05);
-    opacity: 0.8;
-    transition: all 0.3s ease;
+.adotarcard{
+  background-color: var(--secundaria);
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  height: 238.02px;
 }
-
-.thumbnails {
-    display: flex;
-    gap: 12px;
+#queroadt{
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secundaria);
+  margin-bottom: 20px;
 }
-
-.thumb {
-    flex: 1;
-    height: 75px;
-    border-radius: 9px;
-    overflow: hidden;
-    border: 1px solid var(--secundaria);
-    cursor: pointer;
+.adotarcard h1{
+  font-size: var(--text-h2);
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-
-#animal-name{
-    font-weight: 500;
+.adotarcard svg{
+  float: left;
+  margin-right:10px;
 }
-.animal-info {
-    grid-column: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.animal-info h1 {
-    font-size: var(--text-h1);
-}
-
-.pills {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    
-}
-.pill-idade, .pill-porte, .pill-sexo{
-    box-shadow: 0 4px 50px rgb(0, 0, 0, 0.25);
-    
-}
-
-.pills span {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 4px 10px;
-    border-radius: 12px;
-    border: 1px solid var(--secundaria);
-    font-size: var(--text-P);
-    font-weight: bold;
-    color: var(--text-card);
-    white-space: nowrap;
-}
-
-.adopt-card {
-    grid-column: 3;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    gap: 14px;
-    padding: 24px;
-    background-color: var(--cards);
-    border: 1px solid var(--secundaria);
-    border-radius: 12px;
-}
-
-.titulo-adotar {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.titulo-adotar svg {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-}
-
-.titulo-adotar h1 {
-    align-items: center;
-    font-size: var(--text-h3);
-    font-weight: bold;
-}
-
-.adopt-title h2 {
-    font-size: var(--text-h3);
-    text-align: left;
-}
-
-.adopt-card p {
-    font-size: var(--text-P);
-}
-
-.adopt-card button {
-    height: 40px;
-    border-radius: 15px;
-    border: 1px solid var(--secundaria);
-    font-size: var(--text-h3);
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.adopt-card button:hover {
-    transform: scale(1.05);
-    opacity: 0.8;
-    transition: all 0.3s ease;
-}
-
-.action-button-contact-button {
-    background-color: var(--primaria);
-}
-
-.action-button-share-button {
-    background-color: #189D0E;
-}
-
-.responsible {
-    font-size: var(--text-P);
-    font-weight: 200;
+.adotarcard p{
+  font-size: var(--text-P);
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 
-
-.description{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-    background-color: var(--cards);
-    border: 1px solid var(--secundaria);
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 50px rgb(0, 0, 0, 0.25);
+.adotarcard button{
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: var(--text-P);
+  font-weight: bold;
+  border-radius: 15px;
+  height: 30px;
+  cursor: pointer;
 }
 
-.description h2,
-.health-info h2 {
-    margin-top: 10px;
-    text-align: left;
-    font-size: var(--text-h3);
-    font-weight: bold;
-    margin-bottom: 10px;
+.adotarcard button:hover{
+  opacity: 0.8;
+  transform: scale(1.02);
 }
 
-.description p,
-.health-info p {
-    font-size: var(--text-P);
-    line-height: 1;
+
+#adotar{
+  background-color: var(--primaria);
+  color: var(--fundo);
+  border: none;
+}
+#compartilhar{
+  background-color: #81FB24;
+  color: var(--text-secundaria);
+  border: none;
 }
 
-.health-info {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
+
+.transformar{
+  margin-top: 32px;
+  background-color: var(--secundaria);
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  height: 200px;
 }
+.transformar h1{
+  font-size: var(--text-h2);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.transformar svg{
+  float: left;
+  margin-right:  10px;
+  
+  
+}
+.transformar p{
+  font-size: var(--text-P);
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+
+.transformar button{
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: var(--text-P);
+  font-weight: bold;
+  border-radius: 15px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.transformar button:hover{
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+#ajudar{
+  background-color: var(--primaria);
+  color: var(--fundo);
+  border: none;
+}
+
+
+
+
 
 .details-card {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: var(--cards);
-    border: 1px solid var(--secundaria);
-    border-radius: 15px;
-    padding: 20px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--cards);
+  border: 1px solid var(--secundaria);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .detail {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .detail svg {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .detail h3,
 .detail .value {
-    font-size: var(--text-P);
+  font-size: var(--text-P);
 }
 
 .detail h3 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .border-right {
-    border-right: 1px solid var(--secundaria);
+  border-right: 1px solid black;
 }
 
 .gallery-card {
-    background-color: var(--cards);
-    border: 1px solid var(--secundaria);
-    border-radius: 15px;
-    padding: 20px;
-    margin-top: 20px;
+  background-color: var(--cards);
+  border: 1px solid var(--secundaria);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .gallery-card h2 {
-    font-size: var(--text-h3);
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: var(--text-h3);
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
 }
 
 .gallery-photo {
-    aspect-ratio: 1 / 1;
-    border-radius: 10px;
-    border: 1px solid var(--secundaria);
-    overflow: hidden;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  border: 1px solid var(--secundaria);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .gallery-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .gallery-card .gallery-photo:hover {
-      transform: scale(1.05);
-    opacity: 0.8;
-    transition: all 0.3s ease;
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition: all 0.3s ease;
 }
-

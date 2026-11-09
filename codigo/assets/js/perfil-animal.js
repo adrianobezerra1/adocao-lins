@@ -47,19 +47,19 @@ function perfil(animal) {
     console.log(animal.descricao);
     console.log(animal.fotos);
     console.log(document.querySelector('.gallery-grid'));
-    console.log(document.querySelector('.description p'));
+    console.log(document.querySelector('.descricao p'));
 
-    document.getElementById('animal-name').textContent = animal.nome;
+    document.getElementById('nomeanimal').textContent = animal.nome;
     document.title = animal.nome;
 
     document.querySelector('.pill-sexo').textContent = animal.sexo;
     document.querySelector('.pill-idade').textContent = animal.idade;
     document.querySelector('.pill-porte').textContent = animal.porte;
 
-    document.querySelector('.main-photo img').src = animal.fotos[0];
-    document.querySelector('.main-photo img').alt = animal.nome;
+    document.querySelector('.foto-principal img').src = animal.fotos[0];
+    document.querySelector('.foto-principal img').alt = animal.nome;
 
-    const thumbsContainer = document.querySelector('.thumbnails');
+    const thumbsContainer = document.querySelector('.fotos');
 
     thumbsContainer.innerHTML = animal.fotos.map(function (foto, i) {
         return `
@@ -81,11 +81,12 @@ function perfil(animal) {
     document.getElementById('descricao').textContent = animal.descricao;
 
     const galeriaGrid = document.querySelector('.gallery-grid');
-    galeriaGrid.innerHTML = animal.fotos.map(function (foto, i) {
-        return `
-            <div class="gallery-photo">
-                <img src="${foto}" alt="foto ${i + 1}">
-            </div>
-        `;
-    }).join('');
+
+galeriaGrid.innerHTML = `
+    <div class="gallery-photo">
+        <img src="${animal.fotos[0]}" alt="Teste">
+    </div>
+`;
+
+console.log(galeriaGrid.innerHTML);
 }

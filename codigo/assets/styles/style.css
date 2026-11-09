@@ -252,13 +252,14 @@ article {
 .text-hero {
   display: flex;
   flex-direction: column;
-  justify-content: left;
-
+  justify-content: left;  
+  gap: 5px;
   padding: 100px 80px;
 }
 
 .text-hero h1 {
-  margin-bottom: 10px;
+  font-family: "Saira Condensed", sans-serif;
+  margin-bottom: 5px;
 
   color: var(--primaria);
   font-size: 106px;
@@ -266,6 +267,7 @@ article {
 }
 
 .text-hero h3 {
+  font-family: "Saira Condensed", sans-serif;
   color: var(--secundaria);
   font-size: 96px;
   font-weight: bold;
@@ -284,9 +286,14 @@ article {
 }
 
 .link-hero {
-  position: absolute;
-  left: 80px;
-  bottom: 15%;
+  display: flex;
+  align-items: center;
+  
+
+  width: 100%;
+  height: 100%;
+
+  text-decoration: none;
 }
 
 .hero-conteudo svg {
