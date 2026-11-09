@@ -90,3 +90,4 @@ galeriaGrid.innerHTML = `
 
 console.log(galeriaGrid.innerHTML);
 }
+
