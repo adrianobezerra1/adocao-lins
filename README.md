@@ -13,7 +13,7 @@ Projeto de extensão desenvolvido por alunos do
 
  Foto | Nome | GitHub | Função / Contribuição |
 | :---: | :--- | :--- | :--- |
-| <img src="https://wsrv.nl/?url=https://github.com/MateusPires11.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Mateus De Oliveira Pires** | [@MateusPires11](https://github.com/MateusPires11) | Scrum Master / Dev Frontend |
+| <img src="https://wsrv.nl/?url=https://github.com/MateusPires11.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Mateus De Oliveira Pires** | [@MateusPires11](https://github.com/MateusPires11) | Scrum Master / Dev Frontend / UI-UX |
 | <img src="https://wsrv.nl/?url=https://github.com/andersonlucas294.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Anderson Lucas** | [@andersonlucas294](https://github.com/andersonlucas294) | Dev Frontend |
 | <img src="https://wsrv.nl/?url=https://github.com/LuisHenrique676.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Luis Henrique** | [@LuisHenrique676](https://github.com/LuisHenrique676) | Dev Frontend |
 | <img src="https://wsrv.nl/?url=https://github.com/murillobfranca10.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Murillo Franca** | [@murillobfranca10](https://github.com/murillobfranca10) | Dev Frontend |
@@ -110,8 +110,8 @@ Confira as contribuições de cada integrante no projeto.
 <!-- COMMITS-START -->
 | Integrante | Commits | Arquivos únicos | Alterações em arquivos | Linhas adicionadas | Linhas removidas |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| Mateus De Oliveira Pires | 75 | 363 | 1409 | +7799 | -7487 |
-| Anderson Lucas | 10 | 14 | 23 | +2280 | -673 |
+| Mateus De Oliveira Pires | 85 | 369 | 1451 | +9657 | -9836 |
+| Anderson Lucas | 12 | 14 | 29 | +2296 | -687 |
 | Luis Henrique | 2 | 9 | 9 | +542 | -769 |
 | Murillo Franca | 3 | 2 | 4 | +79 | -28 |
 | Rafa Amorim | 3 | 9 | 14 | +0 | -0 |

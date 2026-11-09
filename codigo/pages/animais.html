@@ -6,36 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/img/icons/Logo.png" type="image/png">
     <link rel="stylesheet" href="../assets/styles/animais.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
+    <link rel="stylesheet" href="../assets/styles/header.css">
     <title>Adoção Lins</title>
 
 </head>
 
 <body>
-    <header>
-        <div class="logo-wrapper">
-            <a href="../../index.html">
-                <img src="../assets/img/icons/Logo.png" alt="Logo Adoção Lins" class="logo">
-                <span class="site-name">ADOÇÃO LINS</span>
-            </a>
-        </div>
-        <nav aria-label="Navegação principal">
-            <ul>
-                <li><a href="../../index.html">Início</a></li>
-                <li><a href="./animais.html" class="ativo">Animais</a></li>
-                <li><a href="./sobre-contato.html">Sobre/Contato</a></li>
-            </ul>
-            <div class="search-bar" role="search">
-                <input id="busca-header" type="text" placeholder="Pesquisar">
-                <button type="button" aria-label="Buscar">
-                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true">
-                        <path
-                            d="M19.7427 20.075L25.5167 26.0104M22.8482 12.3935C22.8482 18.4098 18.0692 23.287 12.1741 23.287C6.27894 23.287 1.5 18.4098 1.5 12.3935C1.5 6.37718 6.27894 1.5 12.1741 1.5C18.0692 1.5 22.8482 6.37718 22.8482 12.3935Z"
-                            stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#F9FAFB" />
-                    </svg>
-                </button>
+     <header>
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <a href="../../index.html">
+                    <img src="../assets/img/icons/Logo.png" alt="logo adoção lins" class="logo">
+                    <span class="site-name">ADOÇÃO LINS</span>
+                </a>
             </div>
-        </nav>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="../../index.html" >Início</a></li>
+                    <li><a href="./animais.html" class="ativo">Animais</a></li>
+                    <li><a href="./sobre-contato.html">Sobre/Contato</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar">
+                    <button>
+                        <svg width="30" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.7427 21.8392L24.5167 28.6577M21.8482 13.0145C21.8482 19.9262 17.0692 25.5291 11.1741 25.5291C5.27894 25.5291 0.5 19.9262 0.5 13.0145C0.5 6.10295 5.27894 0.5 11.1741 0.5C17.0692 0.5 21.8482 6.10295 21.8482 13.0145Z"
+                                stroke-linecap="round" stroke-linejoin="round" stroke="#F7F7FA" />
+                        </svg>
+
+                    </button>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <div class="hero-banner">
@@ -75,7 +79,7 @@
 
         <section class="animals-section" aria-label="Lista de animais disponíveis">
             <div class="animals-grid" id="animais">
-                
+
 
             </div>
         </section>
@@ -102,26 +106,27 @@
     <footer>
         <div class="logo-wrapper">
             <a href="../../index.html">
-                <img src="../assets/img/icons/Logo.png" alt="Logo Adoção Lins" class="logo">
+                <img src="../assets/img/icons/Logo.png" alt="logo adoção lins" class="logo">
                 <span class="site-name">ADOÇÃO LINS</span>
             </a>
         </div>
-        <nav class="footer-nav" aria-label="Navegação rodapé">
-            <ul>
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
                 <li><a href="../../index.html">Início</a></li>
-                <li><a href="./pages/animais.html">Animais</a></li>
-                <li><a href="./pages/sobre-contato.html">Sobre/Contato</a></li>
+                <li><a href="./animais.html"class="ativo">Animais</a></li>
+                <li><a href="./sobre-contato.html">Sobre/Contato</a></li>
             </ul>
             <p>© 2025 Adoção Lins. Todos os direitos reservados.</p>
         </nav>
-        <ul class="social-media" aria-label="Redes sociais">
-            <li><a href="#" aria-label="Facebook"><img src="../assets/img/icons/facebook.png" alt=""></a></li>
-            <li><a href="#" aria-label="Instagram"><img src="../assets/img/icons/insta.png" alt=""></a></li>
-            <li id="whatsapp"><a href="#" aria-label="WhatsApp"><img src="../assets/img/icons/WhatsApp.png" alt=""></a></li>
+
+        <ul class="social-media">
+            <li><a href="#"><img src="../assets/img/icons/facebook.png" alt="logo facebook"></a></li>
+            <li><a href="#"><img src="../assets/img/icons/insta.png" alt="logo instagram"></a></li>
+            <li id="whatsapp"><a href="#"><img src="../assets/img/icons/WhatsApp.png" alt="logo do whatsapp"></a></li>
         </ul>
     </footer>
 
-    <script type="module" src="../assets/js/animais.js" ></script>
+    <script type="module" src="../assets/js/animais.js"></script>
 </body>
 
 </html>
