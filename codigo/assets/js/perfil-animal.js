@@ -80,14 +80,16 @@ function perfil(animal) {
     }
     document.getElementById('descricao').textContent = animal.descricao;
 
-    const galeriaGrid = document.querySelector('.gallery-grid');
-
-galeriaGrid.innerHTML = `
-    <div class="gallery-photo">
-        <img src="${animal.fotos[0]}" alt="Teste">
-    </div>
-`;
+   const galeriaGrid = document.querySelector('.gallery-grid');
+    galeriaGrid.innerHTML = animal.fotos.map(function (foto, i) {
+        return `
+            <div class="gallery-photo">
+                <img src="${foto}" alt="foto ${i + 1}">
+            </div>
+        `;
+    }).join('');
+}
 
 console.log(galeriaGrid.innerHTML);
-}
+
 
