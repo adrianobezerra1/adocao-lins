@@ -111,7 +111,7 @@ Confira as contribuições de cada integrante no projeto.
 | Integrante | Commits | Arquivos únicos | Alterações em arquivos | Linhas adicionadas | Linhas removidas |
 | :--- | ---: | ---: | ---: | ---: | ---: |
 | Mateus De Oliveira Pires | 85 | 369 | 1451 | +9657 | -9836 |
-| Anderson Lucas | 12 | 14 | 29 | +2296 | -687 |
+| Anderson Lucas | 15 | 19 | 44 | +4780 | -2679 |
 | Luis Henrique | 2 | 9 | 9 | +542 | -769 |
 | Murillo Franca | 3 | 2 | 4 | +79 | -28 |
 | Rafa Amorim | 3 | 9 | 14 | +0 | -0 |
