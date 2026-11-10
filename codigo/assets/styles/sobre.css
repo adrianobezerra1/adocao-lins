@@ -1,19 +1,6 @@
 /* ================= CONFIGURAÇÕES GERAIS ================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --rosa: #cf2e8b;
-    --rosa-escuro: #bd247e;
-    --rosa-claro: #f7dfed;
-    --branco: #ffffff;
-    --cinza: #f7f6f9;
-    --texto: #252525;
-}
+@import '../styles/styleguide.css';
+@import '../styles/global.css';
 
 html {
     scroll-behavior: smooth;
@@ -23,67 +10,19 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--cinza);
     color: #222;
+
 }
-
-
-/* ================= HEADER ================= */
-
-.header {
-    width: 100%;
-    min-height: 75px;
-    padding: 0 5%;
-    background-color: var(--rosa);
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.logo-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.logo-wrapper img {
-    width: 35px;
-    height: 35px;
-    object-fit: contain;
-}
-
-.logo-wrapper h2,
-.logo-wrapper h3 {
-    color: var(--branco);
-    font-size: 17px;
-}
-
-.menu {
-    display: flex;
-    gap: 35px;
-}
-
-.menu a {
-    color: var(--branco);
-    text-decoration: none;
-    font-size: 13px;
-    transition: 0.3s;
-}
-
-.menu a:hover {
-    opacity: 0.7;
-}
-
-.pesquisa {
-    color: var(--branco);
-    cursor: pointer;
+main{
+    
 }
 
 
 /* ================= SOBRE ================= */
 
 .sobre {
-    background-color: var(--rosa);
+    background-color: #F3E5EF;
     padding: 35px 5% 45px;
+   
 }
 
 .titulo-sobre {
@@ -434,119 +373,3 @@ body {
 
 /* ================= FOOTER ================= */
 
-.footer {
-    background-color: var(--rosa);
-    color: var(--branco);
-    padding: 20px 5% 10px;
-}
-
-.footer-principal {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 20px;
-}
-
-.footer-menu {
-    display: flex;
-    gap: 25px;
-}
-
-.footer-menu a {
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
-}
-
-.footer-redes {
-    display: flex;
-    gap: 15px;
-}
-
-.footer-redes a {
-    color: white;
-    font-size: 18px;
-}
-
-.footer-copy {
-    border-top: 1px solid #ffffff50;
-    text-align: center;
-    padding-top: 12px;
-    font-size: 10px;
-}
-
-
-/* ================= RESPONSIVIDADE ================= */
-
-@media (max-width: 900px) {
-
-    .cards-sobre {
-        grid-template-columns: 1fr;
-    }
-
-    .contato {
-        grid-template-columns: 1fr;
-    }
-
-    .contato-imagem img {
-        height: 350px;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    .header {
-        height: auto;
-        padding: 20px;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .menu {
-        width: 100%;
-        justify-content: space-between;
-        gap: 10px;
-    }
-
-    .titulo-sobre h1 {
-        font-size: 23px;
-    }
-
-    .card {
-        padding: 18px;
-    }
-
-    .informacao {
-        grid-template-columns: 20px 1fr 85px;
-        gap: 8px;
-    }
-
-    .informacao img {
-        width: 85px;
-        height: 110px;
-    }
-
-    .cards-animais {
-        grid-template-columns: 1fr;
-    }
-
-    .contato-informacoes {
-        grid-template-columns: 1fr;
-    }
-
-    .contato-titulo h2 {
-        font-size: 22px;
-    }
-
-    .footer-principal {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .footer-menu {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-}

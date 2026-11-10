@@ -326,6 +326,8 @@ article {
 /* Botão do Hero */
 
 .btn-hero {
+
+  margin-top: 30px;
   width: 456px;
   height: 66px;
 
