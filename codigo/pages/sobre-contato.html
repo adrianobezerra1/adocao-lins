@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,35 +9,45 @@
     <link rel="stylesheet" href="../assets/styles/sobre.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/styles/header.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header class="header">
-
-        <div class="logo-wrapper">
-            <img src="../assets/img/icons/Logo.png" alt="Logo Adoção Lins">
-            <h2>ADOÇÃO LINS</h2>
+    <header>
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <a href="../../index.html">
+                    <img src="../assets/img/icons/Logo.png" alt="logo adoção lins" class="logo" />
+                    <span class="site-name">ADOÇÃO LINS</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="../../index.html">Início</a></li>
+                    <li><a href="./animais.html" class="ativo">Animais</a></li>
+                    <li><a href="./sobre-contato.html">Sobre/Contato</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar" />
+                    <button>
+                        <svg width="30" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18.7427 21.8392L24.5167 28.6577M21.8482 13.0145C21.8482 19.9262 17.0692 25.5291 11.1741 25.5291C5.27894 25.5291 0.5 19.9262 0.5 13.0145C0.5 6.10295 5.27894 0.5 11.1741 0.5C17.0692 0.5 21.8482 6.10295 21.8482 13.0145Z"
+                                stroke-linecap="round" stroke-linejoin="round" stroke="#F7F7FA" />
+                        </svg>
+                    </button>
+                </div>
+            </nav>
         </div>
-
-        <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="animais.html">Animais</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
-        </nav>
-
-        <div class="pesquisa">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-
     </header>
 
     <main>
@@ -55,14 +66,17 @@
                 <article class="card">
 
                     <div class="card-imagem">
-                        <img src="../assets/img/banners/foto-pata-mao.webp" alt="Animal dando a pata">
+                        <img src="../assets/img/sobreimg/image copy 3.png" alt="Animal dando a pata">
                     </div>
 
                     <div class="card-conteudo">
                         <h3>Sobre a ONG</h3>
                         <p>
-                            Somos uma organização independente dedicada à proteção animal,
-                            buscando oferecer melhores condições de vida aos animais abandonados.
+                            Somos uma organização independente<br>
+                            dedicada à proteção e ao bem-estar animal. Buscamos
+                            oferecer acolhimento e melhores condições de vida aos animais abandonados<br> incentivando a
+                            adoção responsável e a construção de um futuro com mais carinho, respeito e segurança para
+                            todos.
                         </p>
                     </div>
 
@@ -93,12 +107,14 @@
                         <div class="informacao-texto">
                             <h3>Adotar é um ato de amor</h3>
                             <p>
-                                Adotar é oferecer uma nova oportunidade de vida, carinho e proteção.
-                                Cada adoção representa uma nova chance.
+                                Adotar é oferecer uma nova oportunidade de vida, carinho e proteção. Além de acolher um
+                                pet, você ganha um companheiro para compartilhar momentos especiais.
+                                Esse gesto ajuda mais animais a encontrar um lar seguro e cheio de amor, podendo
+                                transformar duas vidas: a sua e a dele.
                             </p>
                         </div>
 
-                        <img src="../assets/img/banners/foto-flor-roxa.webp" alt="Animal para adoção">
+                        <img src="../assets/img/sobreimg/image copy 2.png" alt="Animal para adoção">
 
                     </div>
 
@@ -111,12 +127,14 @@
                         <div class="informacao-texto">
                             <h3>Adote com responsabilidade</h3>
                             <p>
-                                A adoção é um compromisso que exige cuidados, carinho,
-                                alimentação e responsabilidade diária.
+                                A adoção é um compromisso de muitos anos. Avalie se você tem tempo, espaço e condições
+                                financeiras para oferecer alimentação, cuidados veterinários, segurança e carinho. Todos
+                                da família devem estar de acordo, e é importante cuidar do animal em todas as fases.
+                                Adotar é amor; cuidar é responsabilidade diária.
                             </p>
                         </div>
 
-                        <img src="../assets/img/banners/foto-rosa.webp" alt="Animal resgatado">
+                        <img src="../assets/img/sobreimg/image copy.png" alt="Animal resgatado">
 
                     </div>
 
@@ -126,21 +144,11 @@
 
         </section>
 
-        <!-- ANIMAIS -->
-        <section class="animais" id="animais">
-
-            <div class="titulo-animais">
-                <span>CONHEÇA</span>
-                <h2>Nossos animais</h2>
-            </div>
-
-        </section>
-
         <!-- CONTATO -->
         <section class="contato" id="contato">
 
             <div class="contato-imagem">
-                <img src="../assets/img/banners/foto-abraco.webp" alt="Protetora cuidando de um animal">
+                <img src="../assets/img/sobreimg/image.png" alt="Protetora cuidando de um animal">
             </div>
 
             <div class="contato-conteudo">
@@ -165,20 +173,17 @@
                     <form class="formulario">
 
                         <label for="nome">Seu nome</label>
-                        <input type="text" id="nome" name="nome"
-                            placeholder="Digite seu nome" required>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
                         <label for="email">Seu e-mail</label>
-                        <input type="email" id="email" name="email"
-                            placeholder="Digite seu e-mail" required>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
                         <label for="telefone">Telefone (opcional)</label>
-                        <input type="tel" id="telefone" name="telefone"
-                            placeholder="Digite seu telefone">
+                        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone">
 
                         <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem"
-                            placeholder="Digite sua mensagem..." required></textarea>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."
+                            required></textarea>
 
                         <button type="submit">
                             <i class="fa-solid fa-paper-plane"></i>
@@ -196,7 +201,7 @@
                             <i class="fa-solid fa-location-dot"></i>
 
                             <div>
-                               <p><strong>Endereço</strong><br>Rua das Flores, 123<br>Lins - SP | CEP 16400-000</p>
+                                <p><strong>Endereço</strong><br>Rua das Flores, 123<br>Lins - SP | CEP 16400-000</p>
                             </div>
                         </div>
 
@@ -243,45 +248,35 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
-
-        <div class="footer-principal">
-
-            <div class="logo-wrapper">
-                <img src="../assets/img/icons/Logo.png" alt="Logo Adoção Lins">
-                <h3>ADOÇÃO LINS</h3>
-            </div>
-
-            <nav class="footer-menu">
-                <a href="index.html">Início</a>
-                <a href="animais.html">Animais</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-            </nav>
-
-            <div class="footer-redes">
-
-                <a href="#" aria-label="WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-
-                <a href="#" aria-label="Facebook">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-
-                <a href="#" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-            </div>
-
+    <footer>
+        <div class="logo-wrapper">
+            <a href="../../index.html">
+                <img src="../assets/img/icons/Logo.png" alt="logo adoção lins" class="logo" />
+                <span class="site-name">ADOÇÃO LINS</span>
+            </a>
         </div>
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="./animais.html" class="ativo">Animais</a></li>
+                <li><a href="./sobre-contato.html">Sobre/Contato</a></li>
+            </ul>
+            <p>© 2025 Adoção Lins. Todos os direitos reservados.</p>
+        </nav>
 
-        <div class="footer-copy">
-            <p>© 2026 Adoção Lins. Todos os direitos reservados.</p>
-        </div>
-
+        <ul class="social-media">
+            <li>
+                <a href="#"><img src="../assets/img/icons/facebook.png" alt="logo facebook" /></a>
+            </li>
+            <li>
+                <a href="#"><img src="../assets/img/icons/insta.png" alt="logo instagram" /></a>
+            </li>
+            <li id="whatsapp">
+                <a href="#"><img src="../assets/img/icons/WhatsApp.png" alt="logo do whatsapp" /></a>
+            </li>
+        </ul>
     </footer>
 
 </body>
+
 </html>
