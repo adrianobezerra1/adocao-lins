@@ -20,7 +20,7 @@ Projeto de extensão desenvolvido por alunos do
 | <img src="https://wsrv.nl/?url=https://github.com/raphael2222226869.png&w=100&h=100&fit=cover&mask=circle" width="50"> | **Rafa Amorim** | [@raphael2222226869](https://github.com/raphael2222226869) | UI-UX Desing |
         
 ## 🔗 Links Úteis
-* **🌐 Aplicação em Produção (Deploy):** [projetointegradorsi.github.io/ONG-Animal]([https://projetointegradorsi.github.io/ONG-Animal](https://adocao-lins.onrender.com/index.html))
+* **🌐 Aplicação em Produção (Deploy):** [projetointegradorsi.github.io/ONG-Animal](https://adocao-lins.onrender.com/index.html)
 * **🎨 Protótipo no Figma:** [Figma](https://www.figma.com/design/c1eJU1BHgjMGCrA4goyZNI/Projeto-Integrador?node-id=0-1&t=WjAuziLAYwz8NAwe-1)
 
 ## 🗂️ Estrutura do repositório
