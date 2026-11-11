@@ -19,29 +19,40 @@ body {
 
 .sobre {
     background-color: #F3E5EF;
-    padding: 35px 5% 45px;
-   
+    padding: 73.76px 80px 42px;
 }
 
 .titulo-sobre {
     margin-bottom: 30px;
-    color: var(--branco);
+    color: var(--primaria);
 }
 
-.titulo-sobre span,
-.contato-titulo span,
-.titulo-animais span {
-    font-size: 10px;
+.titulo-sobre span {
+    color: var(--Primaria, #D1328A);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
 }
+
 
 .titulo-sobre h1 {
-    font-size: 30px;
-    margin: 8px 0;
+    color: var(--Primaria, #D1328A);
+    font-family: Roboto;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .titulo-sobre p {
-    font-size: 14px;
+    color: var(--Primaria, #D1328A);
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 
@@ -54,37 +65,56 @@ body {
 }
 
 .card {
-    background-color: var(--rosa-claro);
-    border-radius: 10px;
+    background-color: var(--secundaria);
+    border-radius: 15px;
     padding: 25px;
     min-height: 400px;
+    stroke-width: 1.5px;
+    filter: drop-shadow(0 4px 50px rgba(0, 0, 0, 0.25));
 }
 
 .card-imagem {
     float: left;
+    width: 160px;
+    height: 240px;
     margin-right: 18px;
     margin-bottom: 15px;
 }
 
 .card-imagem img {
-    width: 120px;
-    height: 140px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 7px;
 }
 
+.card-conteudo {
+    margin-top: 15px;
+}
+
+.card-conteudo p {
+    margin-top: 26px;
+}
+
 .card-conteudo h3,
 .informacao-texto h3 {
-    font-size: 16px;
-    margin-bottom: 12px;
+    color: #343B41;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .card-conteudo p,
 .texto-card p,
 .informacao-texto p {
-    font-size: 12px;
-    line-height: 1.5;
-    color: #555;
+    color: #000;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .texto-card {
@@ -93,8 +123,12 @@ body {
 }
 
 .texto-card h4 {
-    font-size: 13px;
-    margin-bottom: 8px;
+    color: var(--Texto-Card, #000);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 
@@ -114,12 +148,17 @@ body {
     padding: 10px 0;
 }
 
-.informacao > i {
-    font-size: 20px;
+.informacao>i {
+    margin-top: 5px;
+    font-size:20px;
     color: #111;
+}
+.informacao-texto p{
+    margin-top: 10px;
 }
 
 .informacao img {
+    margin-top: 3px;
     width: 120px;
     height: 140px;
     border-radius: 7px;
@@ -136,25 +175,7 @@ body {
 
 /* ================= ANIMAIS ================= */
 
-.animais {
-    padding: 65px 5%;
-    background-color: var(--cinza);
-}
 
-.titulo-animais {
-    text-align: center;
-    margin-bottom: 35px;
-}
-
-.titulo-animais h2 {
-    font-size: 28px;
-    margin: 10px 0;
-}
-
-.titulo-animais p {
-    font-size: 14px;
-    color: #666;
-}
 
 .cards-animais {
     display: grid;
@@ -205,17 +226,21 @@ body {
     display: grid;
     grid-template-columns: 0.9fr 1.5fr;
     gap: 40px;
-    padding: 65px 5%;
+    padding: 0 80px;
     align-items: center;
     background-color: var(--cinza);
+    margin-top: 6%;
+}
+.card-imagem{
+    box-shadow: 0 5px 20px #00000025;
 }
 
 .contato-imagem img {
     width: 100%;
-    height: 450px;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 5px 20px #00000025;
+    
 }
 
 .contato-titulo {
@@ -370,4 +395,3 @@ body {
 
 
 /* ================= FOOTER ================= */
-
