@@ -5,53 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADOÇÃO LINS | Sobre e Contato</title>
-
     <link rel="stylesheet" href="../assets/styles/sobre.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/img/icons/Logo.png" type="image/logo">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/styles/header.css">
     <link rel="stylesheet" href="../assets/styles/footer.css">
+    <style>
+        html.is-changing body {
+            overflow: hidden;
+        }
+
+        main {
+            transition: opacity .5s ease, transform .5s ease;
+        }
+
+        html.is-animating.is-leaving main {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+
+        html.is-rendering main {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        .overlayy {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            background-color: #D1328A;
+            inset: 0;
+            transform: translateX(-100%);
+            z-index: 9999;
+            pointer-events: none;
+        }
+
+        html.is-changing .overlayy {
+            transition: transform .5s ease;
+        }
+
+        html.is-animating .overlayy {
+            transform: translateX(0);
+        }
+
+        html.is-rendering .overlayy {
+            transform: translateX(100%);
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header>
-        <div class="header-container">
-            <div class="logo-wrapper">
-                <a href="../../index.html">
-                    <img src="../assets/img/icons/Logo.png" alt="logo adoção lins" class="logo" />
-                    <span class="site-name">ADOÇÃO LINS</span>
-                </a>
-            </div>
-            <nav>
-                <ul class="header-nav">
-                    <li><a href="../../index.html">Início</a></li>
-                    <li><a href="./animais.html" >Animais</a></li>
-                    <li><a href="./sobre-contato.html" class="ativo">Sobre/Contato</a></li>
-                </ul>
-                <div class="search-bar">
-                    <input type="text" placeholder="Pesquisar" />
-                    <button>
-                        <svg width="30" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M18.7427 21.8392L24.5167 28.6577M21.8482 13.0145C21.8482 19.9262 17.0692 25.5291 11.1741 25.5291C5.27894 25.5291 0.5 19.9262 0.5 13.0145C0.5 6.10295 5.27894 0.5 11.1741 0.5C17.0692 0.5 21.8482 6.10295 21.8482 13.0145Z"
-                                stroke-linecap="round" stroke-linejoin="round" stroke="#F7F7FA" />
-                        </svg>
-                    </button>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-    <main>
+
+    <main id="swup" class="transition-fade">
+        <header>
+            <div class="header-container">
+                <div class="logo-wrapper">
+                    <a href="../../index.html">
+                        <img src="../assets/img/icons/Logo.png" alt="logo adoção lins" class="logo" />
+                        <span class="site-name">ADOÇÃO LINS</span>
+                    </a>
+                </div>
+                <nav>
+                    <ul class="header-nav">
+                        <li><a href="../../index.html">Início</a></li>
+                        <li><a href="./animais.html">Animais</a></li>
+                        <li><a href="./sobre-contato.html" class="ativo">Sobre/Contato</a></li>
+                    </ul>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Pesquisar" />
+                        <button>
+                            <svg width="30" height="30" viewBox="0 0 26 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.7427 21.8392L24.5167 28.6577M21.8482 13.0145C21.8482 19.9262 17.0692 25.5291 11.1741 25.5291C5.27894 25.5291 0.5 19.9262 0.5 13.0145C0.5 6.10295 5.27894 0.5 11.1741 0.5C17.0692 0.5 21.8482 6.10295 21.8482 13.0145Z"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke="#F7F7FA" />
+                            </svg>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
 
         <!-- SOBRE -->
         <section class="sobre" id="sobre">
@@ -245,38 +284,39 @@
             </div>
 
         </section>
+        <!-- FOOTER -->
+        <footer>
+            <div class="logo-wrapper">
+                <a href="../../index.html">
+                    <img src="../assets/img/icons/Logo.png" alt="logo adoção lins" class="logo" />
+                    <span class="site-name">ADOÇÃO LINS</span>
+                </a>
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li><a href="../../index.html">Início</a></li>
+                    <li><a href="./animais.html">Animais</a></li>
+                    <li><a href="./sobre-contato.html" class="ativo">Sobre/Contato</a></li>
+                </ul>
+                <p>© 2025 Adoção Lins. Todos os direitos reservados.</p>
+            </nav>
+
+            <ul class="social-media">
+                <li>
+                    <a href="#"><img src="../assets/img/icons/facebook.png" alt="logo facebook" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../assets/img/icons/insta.png" alt="logo instagram" /></a>
+                </li>
+                <li id="whatsapp">
+                    <a href="#"><img src="../assets/img/icons/WhatsApp.png" alt="logo do whatsapp" /></a>
+                </li>
+            </ul>
+        </footer>
 
     </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="logo-wrapper">
-            <a href="../../index.html">
-                <img src="../assets/img/icons/Logo.png" alt="logo adoção lins" class="logo" />
-                <span class="site-name">ADOÇÃO LINS</span>
-            </a>
-        </div>
-        <nav class="footer-nav">
-            <ul class="footer-nav-list">
-                <li><a href="../../index.html">Início</a></li>
-                <li><a href="./animais.html">Animais</a></li>
-                <li><a href="./sobre-contato.html" class="ativo">Sobre/Contato</a></li>
-            </ul>
-            <p>© 2025 Adoção Lins. Todos os direitos reservados.</p>
-        </nav>
-
-        <ul class="social-media">
-            <li>
-                <a href="#"><img src="../assets/img/icons/facebook.png" alt="logo facebook" /></a>
-            </li>
-            <li>
-                <a href="#"><img src="../assets/img/icons/insta.png" alt="logo instagram" /></a>
-            </li>
-            <li id="whatsapp">
-                <a href="#"><img src="../assets/img/icons/WhatsApp.png" alt="logo do whatsapp" /></a>
-            </li>
-        </ul>
-    </footer>
+    <div class="overlayy"></div>
+    <script type="module" src="../assets/js/swup.js"></script>
 
 </body>
 

@@ -603,27 +603,30 @@ aside button:hover {
     height: 50%;
 
   }
-  .hero video{
+
+  .hero video {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: top;
-    object-fit:fill;
+    object-fit: fill;
   }
 
 
 }
-@media (max-width: 1199px) {
-  
+
+@media screen and (max-width:960px){
+  .header-nav ul{
+    font-size: 20px;
+  }
+  .site-name span{
+    font-size: 25px;
+  }
+  .logo{
+    margin-right: 15px;
+  }
+  .header-container .header-nav{
+    gap:25px;
+  }
 }
-.text-hero h1{
 
-font-size: 85px;
-
-}
-
-.text-hero h3 {
-
-font-size: 80px;
-
-}

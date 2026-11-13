@@ -6,10 +6,9 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-main {
-  margin: 20px 80px;
+.conteiner{
+  padding: 20px 80px;
 }
-
 .back-link {
   display: flex;
   align-items: center;
