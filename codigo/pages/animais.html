@@ -8,49 +8,8 @@
     <link rel="stylesheet" href="../assets/styles/animais.css">
     <link rel="stylesheet" href="../assets/styles/footer.css">
     <link rel="stylesheet" href="../assets/styles/header.css">
+    <link rel="stylesheet" href="../assets/styles/swup.css">
     <title>Adoção Lins</title>
-    <style>
-        html.is-changing body {
-            overflow: hidden;
-        }
-
-        main {
-            transition: opacity .5s ease, transform .5s ease;
-        }
-
-        html.is-animating.is-leaving main {
-            opacity: 0;
-            transform: translateX(100%);
-        }
-
-        html.is-rendering main {
-            opacity: 0;
-            transform: translateX(-100%);
-        }
-
-        .overlayy {
-            width: 100%;
-            height: 100vh;
-            position: fixed;
-            background-color: #D1328A;
-            inset: 0;
-            transform: translateX(-100%);
-            z-index: 9999;
-            pointer-events: none;
-        }
-
-        html.is-changing .overlayy {
-            transition: transform .5s ease;
-        }
-
-        html.is-animating .overlayy {
-            transform: translateX(0);
-        }
-
-        html.is-rendering .overlayy {
-            transform: translateX(100%);
-        }
-    </style>
 
 </head>
 
@@ -148,7 +107,10 @@
                 <button type="button">Saiba mais</button>
             </aside>
 
-            <footer>
+           
+        </div>
+    </main>
+     <footer>
                 <div class="logo-wrapper">
                     <a href="../../index.html">
                         <img src="../assets/img/icons/Logo.png" alt="logo adoção lins" class="logo">
@@ -172,9 +134,6 @@
                     </li>
                 </ul>
             </footer>
-        </div>
-    </main>
-
 
     <div class="overlayy"></div>
     <script type="module" src="../assets/js/swup.js"></script>
