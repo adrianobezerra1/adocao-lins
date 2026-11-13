@@ -213,7 +213,7 @@ body {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: var(--rosa);
+    background-color: var(--primaria);
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -306,7 +306,7 @@ body {
 
 .formulario input:focus,
 .formulario textarea:focus {
-    border-color: var(--rosa);
+    border-color: var(--primaria);
 }
 
 .formulario textarea {
@@ -326,7 +326,7 @@ body {
 }
 
 .formulario button:hover {
-    background-color: var(--rosa);
+    background-color: var(--primaria);
 }
 
 
@@ -389,7 +389,7 @@ body {
 }
 
 .icones-redes a:hover {
-    color: var(--rosa);
+    color: var(--primaria);
     transform: scale(1.12);
 }
 

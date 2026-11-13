@@ -1,0 +1,40 @@
+html.is-changing body {
+    overflow: hidden;
+}
+
+#swup {
+    transition: opacity .3s ease, transform .5s ease;
+}
+
+html.is-animating.is-leaving #swup {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+html.is-rendering #swup {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.overlayy {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #F0FAF6;
+    inset: 0;
+    transform: translateX(-100%);
+    z-index: 9999;
+    pointer-events: none;
+}
+
+html.is-changing .overlayy {
+    transition: transform .3s ease;
+}
+
+html.is-animating .overlayy {
+    transform: translateX(0);
+}
+
+html.is-rendering .overlayy {
+    transform: translateX(100%);
+}
