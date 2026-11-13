@@ -37,11 +37,13 @@ article {
     gap: 30px;
     height: 100px;
     padding: 0 80px;
-    background-color: var(--cards);
-    color: #000000;
+    background-color: #F3E5EF;
+    color: var(--primaria);
     box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
 }
-
+.fundo{
+    background-color: #F3E5EF;
+}
 .hero-content h1 {
     display: flex;
     align-items: center;
