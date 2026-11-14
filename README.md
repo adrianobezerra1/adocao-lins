@@ -2,7 +2,7 @@
 
 ![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-blue)
 ![Ano Inicial](https://img.shields.io/badge/Ano_Inicial-2026-green)
-![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-orange)
+
 
 Projeto de extensão desenvolvido por alunos do 
     curso de Sistemas para Internet da Fatec Lins,
@@ -125,3 +125,5 @@ Confira as contribuições de cada integrante no projeto.
     projeto.## 🏫 Disciplina
 
 Desenvolvimento Web 1 — Curso de Sistemas para Internet — Fatec Lins  2026
+Copyright (c) 2026 Adoção Lins. Todos os direitos reservados.
+Este código não pode ser copiado, modificado ou distribuído sem autorização.
