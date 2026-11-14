@@ -220,32 +220,33 @@ article {
 /* Vídeo de fundo */
 
 .hero video {
-  position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -2;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
 
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
 
-    object-fit: cover;
-    pointer-events: none;
+  object-fit: cover;
+  pointer-events: none;
 }
 
 /* Sobreposição do vídeo */
 
 .overlay {
-  position: absolute; /* antes era fixed */
-    inset: 0;
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 /* Textos do Hero */
