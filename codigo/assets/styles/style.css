@@ -101,6 +101,7 @@ header nav ul li a {
   transition: opacity 0.3s ease;
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
 }
 
 header nav ul li a.ativo,
@@ -120,6 +121,7 @@ header nav button {
   border: none;
   cursor: pointer;
   transition: opacity 0.3s ease;
+
 }
 
 header nav button:hover {

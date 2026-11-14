@@ -2,6 +2,7 @@ import { animais } from '../../data/dados-animais.js';
 
 document.addEventListener('DOMContentLoaded', function() {
     rederizaranimal(animais);
+    document.getElementById("ano").textContent = new Date().getFullYear();
 
 })
 
