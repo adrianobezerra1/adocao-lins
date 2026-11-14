@@ -42,16 +42,14 @@ footer .logo-wrapper span{
     text-decoration: none;
     font-size: var(--text-h3);
     font-weight: bold;
-}
-
-.footer-nav-list li a.ativof {
-    border-bottom: 2px solid var(--secundaria);
     padding-bottom: 4px;
+    border-bottom: 2px solid transparent; 
+    transition: border-color 0.3s ease;
 }
 
+.footer-nav-list li a.ativo,
 .footer-nav-list li a:hover {
-    border-bottom: 2px solid var(--secundaria);
-    opacity: 0.8;
+    border-bottom-color: var(--secundaria);
 }
 
 
