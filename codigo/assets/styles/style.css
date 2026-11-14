@@ -15,49 +15,49 @@ body {
 ============================== */
 
 header {
-  position: relative;
+  position: sticky;
   z-index: 10;
+
 }
 
 .header-container {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 16px;
   left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 10;
 
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  width: 50vh;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.35);
   justify-content: space-between;
 
-  width: 100%;
-  height: 80px;
-}
+  width: min(90%, 900px);
+  height: 64px;
+  padding: 0 24px;
 
-.header-container .logo-wrapper {
-  flex: 1;
-  margin-left: 80px;
+  background: rgb(255,255,255, 0.35);
+  border-radius: 999px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
 }
 
 .header-container nav {
   position: static;
   flex: 2;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 }
 
-.header-container .header-nav {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-}
 
-.header-container .search-bar {
+.search-bar {
   flex: 1;
   display: flex;
   justify-content: flex-end;
@@ -65,46 +65,29 @@ header {
   margin-right: 80px;
 }
 
-.logo-wrapper {
-  flex: 1;
-  margin-left: 80px;
-}
 
-.logo-wrapper a {
-  display: flex;
-  align-items: center;
-  color: var(--secundaria);
-  text-decoration: none;
-  transition: opacity 0.3s ease;
-}
-
-.logo-wrapper a:hover {
-  opacity: 0.8;
-}
-
-.logo-wrapper span,
-.site-name {
-  color: var(--secundaria);
-  font-size: var(--text-h3);
-  font-weight: bold;
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  margin-right: 29px;
-}
 
 /* Navegação */
 
-header nav {
-  position: relative;
-  flex: 2;
-
+.header-container .logo-wrapper a {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
 }
+
+
+.header-container .logo-wrapper a img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-container .logo-wrapper a span {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--texto-claro); 
+}
+
 
 .header-nav {
   position: absolute;
@@ -113,8 +96,9 @@ header nav {
 
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  gap: 40px;
+  gap: 15px;
 
   margin: 0;
   padding: 0;
@@ -123,7 +107,7 @@ header nav {
 
 header nav ul li a {
   color: var(--texto-claro);
-  font-size: var(--text-h3);
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   transition: opacity 0.3s ease;
@@ -615,18 +599,20 @@ aside button:hover {
 
 }
 
-@media screen and (max-width:960px){
-  .header-nav ul{
+@media screen and (max-width:960px) {
+  .header-nav ul {
     font-size: 20px;
   }
-  .site-name span{
+
+  .site-name span {
     font-size: 25px;
   }
-  .logo{
+
+  .logo {
     margin-right: 15px;
   }
-  .header-container .header-nav{
-    gap:25px;
+
+  .header-container .header-nav {
+    gap: 25px;
   }
 }
-
