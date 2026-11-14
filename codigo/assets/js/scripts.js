@@ -1,24 +1,22 @@
 import { animais } from '../../data/dados-animais.js';
 
-export function inicializarInicio() {
-    renderizarAnimal(animais);
-}
+document.addEventListener('DOMContentLoaded', function() {
+    rederizaranimal(animais);
 
-function renderizarAnimal(listaAnimais) {
-    const grid = document.getElementById('animais');
+})
 
-    if (!grid || !grid.classList.contains('animais')) return;
-
-    if (listaAnimais.length === 0) {
+function rederizaranimal(animais) {
+    const grid = document.getElementById('animais')
+    if (animais.lenght === 0) {
         grid.innerHTML = '<p>Animal não encontrado</p>';
         return;
     }
 
-    grid.innerHTML = listaAnimais.map(cardAnimal).join('');
+    grid.innerHTML = animais.map(cardanimal).join('');
 }
 
-function cardAnimal(animal) {
-    return `
+function cardanimal(animal){
+    return`
         <div class="cardsanimal">
             <img src="${animal.fotos[0]}" alt="${animal.nome}">
             <h3>${animal.nome}</h3>
@@ -27,5 +25,5 @@ function cardAnimal(animal) {
                 <button>QUERO ADOTAR</button>
             </a>
         </div>
-    `;
+    `
 }
