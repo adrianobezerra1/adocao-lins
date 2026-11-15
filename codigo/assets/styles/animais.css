@@ -1,6 +1,9 @@
-
 @import '../styles/global.css';
 @import '../styles/styleguide.css';
+
+html {
+    scroll-behavior: smooth;
+}
 
 /* ==============================
    CONFIGURAÇÕES GERAIS
@@ -37,9 +40,9 @@ article {
     gap: 30px;
     height: 100px;
     padding: 0 80px;
-    background-color: var(--cards);
-    color: #000000;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
+    background-color: var(--primaria);
+    color: var(--texto-claro);
+
 }
 
 .hero-content h1 {

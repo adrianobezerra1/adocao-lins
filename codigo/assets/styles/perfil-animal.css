@@ -1,6 +1,10 @@
 @import "../styles/global.css";
 @import "../styles/styleguide.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--fundo);
   font-family: "Roboto", sans-serif;
@@ -37,20 +41,23 @@ main {
   margin-top: 20px;
   flex-direction: row;
   height: 472px;
-  gap:39px;
+  gap: 39px;
 }
+
 .foto {
   background-color: var(--secundaria);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 540px;
   border-radius: 15px;
-  
+
 }
+
 .foto-principal {
   width: 100%;
   height: 367.682px;
   padding: 10px;
 }
+
 .foto-principal img {
   width: 100%;
   height: 100%;
@@ -58,12 +65,14 @@ main {
   cursor: pointer;
   object-fit: cover;
 }
+
 .foto-principal img:hover {
   transform: scale(1.02);
   opacity: 0.8;
   transition: all 0.3s ease;
 }
-.fotos{
+
+.fotos {
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -73,34 +82,38 @@ main {
   margin-top: 5px;
   padding: 10px;
 }
+
 .fotos img {
   width: 116px;
   height: 79.664px;
   border-radius: 15px;
   object-fit: cover;
 }
+
 .fotos img:hover {
   transform: scale(1.05);
   opacity: 0.8;
   transition: all 0.3s ease;
 }
 
-.sobre{
+.sobre {
   width: 500px;
   margin-top: 40px;
-} 
-.nome-animal{
+}
+
+.nome-animal {
   display: flex;
   align-items: center;
   justify-content: left;
   margin-bottom: 30px;
 }
-.sobre h1{
+
+.sobre h1 {
   font-size: var(--text-h1);
   font-weight: bold;
 }
 
-.pills{
+.pills {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -108,62 +121,70 @@ main {
   gap: 10px;
   margin-bottom: 30px;
 }
-.pills button{
+
+.pills button {
   background-color: var(--secundaria);
   border: 1px solid var(--secundaria);
   border-radius: 15px;
-  
+
   width: 75px;
   height: 40px;
   font-size: var(--text-P);
   font-weight: 600;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.descricao h2{
+
+.descricao h2 {
   font-size: var(--text-h2);
   font-weight: bold;
   margin-bottom: 10px;
 }
-.descricao p{
+
+.descricao p {
   font-size: var(--text-P);
   line-height: 1.2;
   margin-bottom: 30px;
 }
 
-.adotar{
+.adotar {
   display: flex;
   flex-direction: column;
 }
-.adotarcard{
+
+.adotarcard {
   background-color: var(--secundaria);
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 20px;
   height: 238.02px;
 }
-#queroadt{
+
+#queroadt {
   font-size: 15px;
   font-weight: 500;
   color: var(--text-secundaria);
   margin-bottom: 20px;
 }
-.adotarcard h1{
+
+.adotarcard h1 {
   font-size: var(--text-h2);
   font-weight: bold;
   margin-bottom: 10px;
 }
-.adotarcard svg{
+
+.adotarcard svg {
   float: left;
-  margin-right:10px;
+  margin-right: 10px;
 }
-.adotarcard p{
+
+.adotarcard p {
   font-size: var(--text-P);
   line-height: 1.2;
   margin-bottom: 10px;
 }
 
 
-.adotarcard button{
+.adotarcard button {
   margin-bottom: 5px;
   width: 100%;
   text-align: center;
@@ -174,26 +195,27 @@ main {
   cursor: pointer;
 }
 
-.adotarcard button:hover{
+.adotarcard button:hover {
   opacity: 0.8;
   transform: scale(1.02);
   transition: all 0.3s ease;
 }
 
 
-#adotar{
+#adotar {
   background-color: var(--primaria);
   color: var(--fundo);
   border: none;
 }
-#compartilhar{
+
+#compartilhar {
   background-color: #81FB24;
   color: var(--text-secundaria);
   border: none;
 }
 
 
-.transformar{
+.transformar {
   margin-top: 32px;
   background-color: var(--secundaria);
   border-radius: 15px;
@@ -201,25 +223,28 @@ main {
   padding: 20px;
   height: 200px;
 }
-.transformar h1{
+
+.transformar h1 {
   font-size: var(--text-h2);
   font-weight: bold;
   margin-bottom: 5px;
 }
-.transformar svg{
+
+.transformar svg {
   float: left;
-  margin-right:  10px;
-  
-  
+  margin-right: 10px;
+
+
 }
-.transformar p{
+
+.transformar p {
   font-size: var(--text-P);
   line-height: 1.2;
   margin-bottom: 10px;
 }
 
 
-.transformar button{
+.transformar button {
   margin-bottom: 5px;
   width: 100%;
   text-align: center;
@@ -230,12 +255,13 @@ main {
   cursor: pointer;
 }
 
-.transformar button:hover{
+.transformar button:hover {
   opacity: 0.8;
   transform: scale(1.02);
   transition: all 0.3s ease;
 }
-#ajudar{
+
+#ajudar {
   background-color: var(--primaria);
   color: var(--fundo);
   border: none;
