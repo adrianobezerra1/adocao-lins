@@ -6,7 +6,7 @@ header {
 }
 
 .header-container {
-    position: fixed;
+    position: sticky;
     top: 16px;
     left: 0;
     right: 0;
@@ -26,11 +26,11 @@ header {
     height: 64px;
     padding: 0 24px;
 
-    background: rgba(0, 0, 0, 0.65);
-
+    background: #ffffff7e;
     backdrop-filter: blur(20px);
     border-radius: 999px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 
 }
 
