@@ -1,6 +1,6 @@
 import { animais } from '../../data/dados-animais.js';
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     rederizaranimal(animais);
     document.getElementById("ano").textContent = new Date().getFullYear();
 
@@ -13,11 +13,12 @@ function rederizaranimal(animais) {
         return;
     }
 
-    grid.innerHTML = animais.map(cardanimal).join('');
+    const destaque = [...animais].sort(() => Math.random() - 0.5).slice(0, 4);
+    grid.innerHTML = destaque.map(cardanimal).join('');
 }
 
-function cardanimal(animal){
-    return`
+function cardanimal(animal) {
+    return `
         <div class="cardsanimal">
             <img src="${animal.fotos[0]}" alt="${animal.nome}">
             <h3>${animal.nome}</h3>

@@ -21,11 +21,12 @@ body {
 header {
   position: sticky;
   z-index: 10;
+  margin-top: 16px;
 
 }
 
 .header-container {
-  position: fixed;
+  position: sticky;
   top: 16px;
   left: 0;
   right: 0;
@@ -43,7 +44,7 @@ header {
 
   width: min(90%, 900px);
   height: 64px;
-  padding: 0 24px;
+  padding: 0 clamp(12px, 3vw, 24px);
 
   background: #ffffff49;
   backdrop-filter: blur(20px);
@@ -59,6 +60,7 @@ header {
   display: flex;
   justify-content: right;
   align-items: center;
+  gap: clamp(8px, 2vw, 15px);
 }
 
 /* Navegação */
@@ -77,7 +79,7 @@ header {
 }
 
 .header-container .logo-wrapper a span {
-  font-size: 20px;
+  font-size: clamp(14px, 1.8vw, 20px);
   font-weight: bold;
   color: var(--texto-claro);
 }
@@ -101,7 +103,7 @@ header {
 
 header nav ul li a {
   color: var(--texto-claro);
-  font-size: 20px;
+  font-size: clamp(14px, 1.8vw, 20px);
   font-weight: bold;
   text-decoration: none;
   transition: opacity 0.3s ease;
@@ -160,7 +162,7 @@ header nav button:hover {
 }
 
 .search-bar input {
-  width: 150px;
+  width: clamp(80px, 12vw, 150px);
   height: 40px;
   padding: 10px;
   margin-right: 10px;
@@ -194,7 +196,7 @@ article {
   position: relative;
   z-index: 2;
   margin: 0;
-  padding: 25px 80px;
+  padding: 25px clamp(16px, 5vw, 80px);
 }
 
 .fundo {
@@ -208,7 +210,8 @@ article {
 .hero {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   overflow: hidden;
 }
 
@@ -246,7 +249,7 @@ article {
   flex-direction: column;
   justify-content: left;
   gap: 5px;
-  padding: 100px 80px;
+  padding: clamp(80px, 14vh, 100px) clamp(16px, 5vw, 80px);
 }
 
 .text-hero h1 {
@@ -254,14 +257,14 @@ article {
   margin-bottom: 5px;
 
   color: var(--primaria);
-  font-size: 106px;
+  font-size: clamp(48px, 10vw, 106px);
   font-weight: bold;
 }
 
 .text-hero h3 {
   font-family: "Saira Condensed", sans-serif;
   color: var(--secundaria);
-  font-size: 96px;
+  font-size: clamp(36px, 9vw, 96px);
   font-weight: bold;
 }
 
@@ -271,10 +274,13 @@ article {
   display: flex;
   align-items: end;
   justify-content: right;
-  gap: 40%;
-
   height: 100%;
-  padding: 0 80px;
+  flex-wrap: wrap;
+  gap: clamp(16px, 5%, 40px);
+  padding: 0 clamp(16px, 5vw, 80px);
+
+
+
 }
 
 .link-hero {
@@ -320,8 +326,8 @@ article {
 .btn-hero {
 
   margin-top: 30px;
-  width: 456px;
-  height: 66px;
+
+
 
   border: 1px solid var(--primaria);
   border-radius: 15px;
@@ -331,13 +337,17 @@ article {
 
   text-align: center;
   font-family: "Saira Condensed";
-  font-size: 40px;
+
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 
   cursor: pointer;
   transition: transform 0.3s ease;
+  width: min(456px, 100%);
+  height: auto;
+  min-height: 66px;
+  font-size: clamp(24px, 4vw, 40px);
 }
 
 .btn-hero:hover {
@@ -351,12 +361,12 @@ article {
   align-items: center;
   justify-content: flex-end;
 
-  width: 603px;
+  width: min(603px, 100%);
 }
 
 .hero-image img {
-  width: 365px;
-  height: 341px;
+  width: clamp(180px, 30vw, 365px);
+  height: auto;
 }
 
 /* ==============================
@@ -373,6 +383,8 @@ article {
   justify-content: space-between;
 
   margin: 20px 0 45px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .animais-destaque nav h2 {
@@ -412,6 +424,8 @@ article {
 .animais {
   display: flex;
   flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 17px;
 }
 
@@ -420,7 +434,7 @@ article {
 ============================== */
 
 .cardsanimal {
-  width: 306.859px;
+  width: 100%;
   padding: 10px;
 
   border: 1px solid var(--secundaria);
@@ -442,7 +456,7 @@ article {
   height: 200px;
   margin-bottom: 15px;
 
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   border-radius: 9px;
 }
@@ -498,7 +512,7 @@ article {
 ============================== */
 
 .aside-wrapper {
-  margin: 90px 0;
+  margin: clamp(40px, 8vh, 90px) 0;
 }
 
 aside {
@@ -507,8 +521,13 @@ aside {
   justify-content: space-between;
 
   width: 100%;
-  height: 120px;
-  padding: 0 53px;
+
+
+  height: auto;
+  min-height: 120px;
+  padding: 16px clamp(16px, 4vw, 53px);
+  flex-wrap: wrap;
+  gap: 16px;
 
   background-color: var(--cards);
   box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
@@ -542,6 +561,7 @@ aside p {
 
 .aside-left {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 20px;
 }
