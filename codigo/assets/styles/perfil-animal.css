@@ -209,8 +209,8 @@ main {
 }
 
 #compartilhar {
-  background-color: #81FB24;
-  color: var(--text-secundaria);
+  background-color: #f3e5ef;
+  color: var(--primaria);
   border: none;
 }
 
