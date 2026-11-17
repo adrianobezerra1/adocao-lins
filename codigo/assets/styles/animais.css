@@ -3,12 +3,13 @@
 
 html {
     scroll-behavior: smooth;
+    scrollbar-gutter: stable;
 }
 
 /* ==============================
    CONFIGURAÇÕES GERAIS
 ============================== */
-
+ 
 body {
     background-color: var(--fundo);
     font-family: 'Roboto', sans-serif;

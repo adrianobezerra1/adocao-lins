@@ -28,30 +28,20 @@ header {
 .header-container {
   position: sticky;
   top: 16px;
-  left: 0;
-  right: 0;
   margin: 0 auto;
   z-index: 10;
 
   display: flex;
   align-items: center;
-  justify-content: center;
-
-  width: 50vh;
-  height: 80px;
-  background-color: rgba(255, 255, 255, 0.35);
   justify-content: space-between;
 
   width: min(90%, 900px);
   height: 64px;
   padding: 0 clamp(12px, 3vw, 24px);
 
-  background: #ffffff49;
-  backdrop-filter: blur(20px);
+  background: #ffffff93;
   border-radius: 999px;
-
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.26);
-
 }
 
 .header-container nav {
@@ -81,8 +71,10 @@ header {
 .header-container .logo-wrapper a span {
   font-size: clamp(14px, 1.8vw, 20px);
   font-weight: bold;
-  color: var(--texto-claro);
+  color: var(--texto-escuro);
 }
+
+
 
 
 .header-nav {
@@ -102,7 +94,7 @@ header {
 }
 
 header nav ul li a {
-  color: var(--texto-claro);
+  color: var(--texto-escuro);
   font-size: clamp(14px, 1.8vw, 20px);
   font-weight: bold;
   text-decoration: none;
@@ -167,7 +159,7 @@ header nav button:hover {
   padding: 10px;
   margin-right: 10px;
 
-  color: var(--secundaria);
+  color: var(--texto-escuro);
   font-size: var(--text-p);
 
   background: transparent;
@@ -178,7 +170,7 @@ header nav button:hover {
 
 .search-bar input::placeholder {
   padding-left: 10px;
-  color: var(--secundaria);
+  color: var(--texto-escuro);
   font-size: var(--text-p);
   font-weight: 700;
 }
@@ -186,6 +178,16 @@ header nav button:hover {
 .search-bar input:focus {
   outline: none;
   border-bottom: 2px solid var(--primaria);
+}
+.search-bar button svg {
+
+  overflow: visible;
+}
+.search-bar svg path, 
+svg circle, 
+svg rect {
+  stroke: #000000; /* Cor da borda */
+  stroke-width: 2px; /* Espessura da borda */
 }
 
 /* ==============================

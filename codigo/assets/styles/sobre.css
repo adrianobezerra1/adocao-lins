@@ -19,17 +19,18 @@ body {
 
 .sobre {
     background-color: #F3E5EF;
-    padding: 73.76px 80px 42px;
+    padding: clamp(48px, 8vw, 73px) clamp(16px, 5vw, 80px) 42px;
 }
 
 .titulo-sobre {
     margin-bottom: 30px;
+
     color: var(--primaria);
 }
 
 .titulo-sobre span {
     color: var(--Primaria, #D1328A);
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -39,8 +40,8 @@ body {
 
 .titulo-sobre h1 {
     color: var(--Primaria, #D1328A);
-    font-family: Roboto;
-    font-size: 42px;
+   font-family: 'Roboto', sans-serif;
+    font-size: clamp(28px, 5vw, 42px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -48,8 +49,8 @@ body {
 
 .titulo-sobre p {
     color: var(--Primaria, #D1328A);
-    font-family: Roboto;
-    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(15px, 2vw, 17px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -60,14 +61,14 @@ body {
 
 .cards-sobre {
     display: grid;
-    grid-template-columns: 1fr 1.1fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
     gap: 20px;
 }
 
 .card {
     background-color: var(--secundaria);
     border-radius: 15px;
-    padding: 25px;
+    padding: clamp(16px, 3vw, 25px);
     min-height: 400px;
     stroke-width: 1.5px;
     filter: drop-shadow(0 4px 50px rgba(0, 0, 0, 0.25));
@@ -75,8 +76,8 @@ body {
 
 .card-imagem {
     float: left;
-    width: 160px;
-    height: 240px;
+    width: clamp(110px, 25vw, 160px);
+    height: clamp(165px, 37vw, 240px);
     margin-right: 18px;
     margin-bottom: 15px;
 }
@@ -99,8 +100,8 @@ body {
 .card-conteudo h3,
 .informacao-texto h3 {
     color: #343B41;
-    font-family: Roboto;
-    font-size: 24px;
+   font-family: 'Roboto', sans-serif;
+    font-size: clamp(18px, 2.5vw, 24px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -110,7 +111,7 @@ body {
 .texto-card p,
 .informacao-texto p {
     color: #000;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -124,8 +125,8 @@ body {
 
 .texto-card h4 {
     color: var(--Texto-Card, #000);
-    font-family: Roboto;
-    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(17px, 2.2vw, 20px);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -142,7 +143,7 @@ body {
 
 .informacao {
     display: grid;
-    grid-template-columns: 25px 1fr 120px;
+    grid-template-columns: 25px 1fr clamp(80px, 18vw, 120px);
     gap: 12px;
     align-items: start;
     padding: 10px 0;
@@ -150,17 +151,18 @@ body {
 
 .informacao>i {
     margin-top: 5px;
-    font-size:20px;
+    font-size: 20px;
     color: #111;
 }
-.informacao-texto p{
+
+.informacao-texto p {
     margin-top: 10px;
 }
 
 .informacao img {
     margin-top: 3px;
-    width: 120px;
-    height: 140px;
+    width: 100%;
+    height: clamp(100px, 20vw, 140px);
     border-radius: 7px;
     object-fit: cover;
 }
@@ -179,7 +181,7 @@ body {
 
 .cards-animais {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
     gap: 25px;
     max-width: 850px;
     margin: auto;
@@ -194,7 +196,7 @@ body {
 
 .animal-card img {
     width: 100%;
-    height: 220px;
+    height: clamp(160px, 30vw, 220px);
     object-fit: cover;
     border-radius: 8px;
 }
@@ -224,14 +226,15 @@ body {
 
 .contato {
     display: grid;
-    grid-template-columns: 0.9fr 1.5fr;
-    gap: 40px;
-    padding: 0 80px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: clamp(20px, 4vw, 40px);
+    padding: 0 clamp(16px, 5vw, 80px);
     align-items: center;
     background-color: var(--cinza);
     margin-top: 6%;
 }
-.card-imagem{
+
+.card-imagem {
     box-shadow: 0 5px 20px #00000025;
 }
 
@@ -240,7 +243,7 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    
+
 }
 
 .contato-titulo {
@@ -252,7 +255,7 @@ body {
 }
 
 .contato-titulo h2 {
-    font-size: 28px;
+    font-size: clamp(22px, 3vw, 28px);
     margin: 10px 0 20px;
 }
 
@@ -268,7 +271,7 @@ body {
 
 .contato-informacoes {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
     gap: 25px;
     align-items: center;
 }
