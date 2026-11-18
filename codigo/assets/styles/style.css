@@ -596,3 +596,16 @@ aside button:hover {
 ============================== */
 
 /* Estilizado em footer.css */
+
+@media (min-width: 1200px) {
+  .header-mobile{
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  .header-desktop{
+    display: none;
+  }
+  
+}
