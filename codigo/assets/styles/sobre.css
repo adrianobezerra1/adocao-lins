@@ -29,7 +29,7 @@ body {
 }
 
 .titulo-sobre span {
-    color: var(--Primaria, #D1328A);
+    color: var(--Primaria);
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-style: normal;
@@ -39,7 +39,7 @@ body {
 
 
 .titulo-sobre h1 {
-    color: var(--Primaria, #D1328A);
+    color: var(--Primaria);
    font-family: 'Roboto', sans-serif;
     font-size: clamp(28px, 5vw, 42px);
     font-style: normal;
@@ -48,7 +48,7 @@ body {
 }
 
 .titulo-sobre p {
-    color: var(--Primaria, #D1328A);
+    color: var(--Primaria);
     font-family: 'Roboto', sans-serif;
     font-size: clamp(15px, 2vw, 17px);
     font-style: normal;
