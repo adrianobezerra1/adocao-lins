@@ -1,24 +1,35 @@
 @import "../styles/global.css";
 @import "../styles/styleguide.css";
 
-*{
-     font-family: 'Roboto', sans-serif; 
+* {
+    font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 769px) {
-   .nav-mobile {
+    .nav-mobile {
         display: none;
     }
 }
 
-.cabecalho-desktop {
-    position: sticky;
-    z-index: 10;
-  
-    position: sticky;
+.hero header {
+    position: fixed;
     top: 16px;
-    margin: 0 auto;
+    left: 0;
+    right: 0;
     z-index: 10;
+    height: auto;
+    background: transparent;
+}
+
+
+
+
+
+
+.cabecalho-desktop {
+    position: relative;
+  
+    margin: 0 auto;
 
     display: flex;
     align-items: center;

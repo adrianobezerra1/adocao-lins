@@ -1,9 +1,5 @@
-@import "../styles/global.css";
-@import "../styles/styleguide.css";
-
-* {
-    font-family: 'Roboto', sans-serif;
-}
+@import "/codigo/assets/styles/global.css";
+@import "/codigo/assets/styles/styleguide.css";
 
 header {
     height: 96px;
@@ -16,6 +12,17 @@ header {
         display: none;
     }
 
+    header nav button:hover {
+        opacity: 0.8;
+    }
+
+    header nav ul li a:hover {
+        border-bottom-color: var(--primaria);
+    }
+
+
+
+
 }
 
 /* ==========================================
@@ -23,6 +30,7 @@ header {
    ========================================== */
 
 .cabecalho-desktop {
+    font-family: 'Roboto', sans-serif;
     position: sticky;
     top: 16px;
     margin: 0 auto;
@@ -84,7 +92,7 @@ header {
     list-style: none;
 }
 
-header nav ul li a {
+.cabecalho-menu li a {
     color: var(--texto-claro);
     font-size: 20px;
     font-weight: bold;
@@ -95,8 +103,7 @@ header nav ul li a {
 }
 
 header nav ul li a.ativo,
-header nav ul li a.menu-ativo,
-header nav ul li a:hover {
+header nav ul li a.menu-ativo {
     border-bottom-color: var(--primaria);
 }
 
@@ -114,9 +121,7 @@ header nav button {
     transition: opacity 0.3s ease;
 }
 
-header nav button:hover {
-    opacity: 0.8;
-}
+
 
 /* Barra de pesquisa */
 
@@ -174,7 +179,3 @@ svg rect {
     stroke: var(--secundaria);
     stroke-width: 2px;
 }
-
-/* ==========================================
-   MOBILE (atende os dois headers)
-   ========================================== */

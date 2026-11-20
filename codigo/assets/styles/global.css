@@ -1,5 +1,6 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
 	-webkit-font-smoothing: antialiased;
@@ -90,10 +91,7 @@ a {
 }
 
 
-nav ul li a.ativo {
-    border-bottom: 2px solid var(--primaria);
-    padding-bottom: 4px;
-}
+
 
 html,
 body,
