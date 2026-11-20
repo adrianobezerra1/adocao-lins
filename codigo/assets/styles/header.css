@@ -1,16 +1,28 @@
 @import "../styles/global.css";
 @import "../styles/styleguide.css";
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     height: 96px;
     background-color: var(--primaria);
+}
+
+@media (min-width: 769px) {
+
+    .nav-mobile {
+        display: none;
+    }
+
 }
 
 /* ==========================================
    HEADER PADRÃO (demais páginas)
    ========================================== */
 
-.header-container {
+.cabecalho-desktop {
     position: sticky;
     top: 16px;
     margin: 0 auto;
@@ -29,7 +41,7 @@ header {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-.header-container nav {
+.cabecalho-desktop nav {
     position: static;
     flex: 2;
     display: flex;
@@ -37,26 +49,26 @@ header {
     align-items: center;
 }
 
-.header-container .logo-wrapper a {
+.cabecalho-desktop .cabecalho-logo a {
     display: flex;
     align-items: center;
     gap: 10px;
     text-decoration: none;
 }
 
-.header-container .logo-wrapper a img {
+.cabecalho-desktop .cabecalho-logo a img {
     width: 40px;
     height: 40px;
 }
 
-.header-container .logo-wrapper a span {
+.cabecalho-desktop .cabecalho-logo a span {
     font-size: 20px;
     font-weight: bold;
     border-color: var(--primaria);
     color: var(--secundaria);
 }
 
-.header-nav {
+.cabecalho-menu {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -108,14 +120,14 @@ header nav button:hover {
 
 /* Barra de pesquisa */
 
-.search-bar {
+.cabecalho-busca {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
 }
 
-.search-bar button {
+.cabecalho-busca button {
     background-color: transparent;
     border: none;
     text-decoration: none;
@@ -124,12 +136,12 @@ header nav button:hover {
     cursor: pointer;
 }
 
-.search-bar button svg {
+.cabecalho-busca button svg {
     width: 100%;
     height: 100%;
 }
 
-.search-bar input {
+.cabecalho-busca input {
     width: 150px;
     height: 40px;
     padding: 10px;
@@ -144,19 +156,19 @@ header nav button:hover {
     border-radius: 0;
 }
 
-.search-bar input::placeholder {
+.cabecalho-busca input::placeholder {
     padding-left: 10px;
     color: var(--secundaria);
     font-size: var(--text-p);
     font-weight: 700;
 }
 
-.search-bar input:focus {
+.cabecalho-busca input:focus {
     outline: none;
     border-bottom: 2px solid var(--primaria);
 }
 
-.search-bar svg path,
+.cabecalho-busca svg path,
 svg circle,
 svg rect {
     stroke: var(--secundaria);
@@ -166,62 +178,3 @@ svg rect {
 /* ==========================================
    MOBILE (atende os dois headers)
    ========================================== */
-
-@media (min-width: 769px) {
-    .header-mobile,
-    .cabecalho-mobile {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .header-desktop,
-    .cabecalho-desktop {
-        display: none;
-    }
-
-    .header-mobile,
-    .cabecalho-mobile {
-        position: fixed;
-        z-index: 10;
-        background: #333333;
-        display: flex;
-        right: 0;
-        left: 0;
-        bottom: 10px;
-        margin: 0 auto;
-        justify-content: center;
-        flex-direction: row;
-        border-radius: 999px;
-        gap: 20px;
-        padding: 10px;
-        height: 70px;
-        width: 40vh;
-    }
-
-    .header-mobile button,
-    .cabecalho-mobile button {
-        margin: 0;
-        width: 8vh;
-        padding: 5px;
-        background: transparent;
-        border: none;
-        text-decoration: none;
-    }
-
-    .header-mobile button a svg,
-    .cabecalho-mobile button a svg {
-        margin: 0;
-        width: 30px;
-        height: 30px;
-    }
-
-    .atv,
-    .mobile-ativo {
-        border-bottom: 2px solid var(--primaria);
-    }
-
-    #ft {
-        display: none;
-    }
-}

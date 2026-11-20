@@ -5,6 +5,11 @@
      font-family: 'Roboto', sans-serif; 
 }
 
+@media (min-width: 769px) {
+   .nav-mobile {
+        display: none;
+    }
+}
 
 .cabecalho-desktop {
     position: sticky;

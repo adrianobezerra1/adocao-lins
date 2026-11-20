@@ -1,2 +1,56 @@
 @import "../styles/global.css";
 @import "../styles/styleguide.css";
+
+
+
+@media (max-width: 768px) {
+    .header-desktop,
+    .cabecalho-desktop {
+        display: none;
+    }
+
+    .header-mobile,
+    .cabecalho-mobile {
+        position: fixed;
+        z-index: 10;
+        background: #333333;
+        display: flex;
+        right: 0;
+        left: 0;
+        bottom: 10px;
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: row;
+        border-radius: 999px;
+        gap: 20px;
+        padding: 10px;
+        height: 70px;
+        width: 40vh;
+    }
+
+    .header-mobile button,
+    .cabecalho-mobile button {
+        margin: 0;
+        width: 8vh;
+        padding: 5px;
+        background: transparent;
+        border: none;
+        text-decoration: none;
+    }
+
+    .header-mobile button a svg,
+    .cabecalho-mobile button a svg {
+        margin: 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    .atv,
+    .mobile-ativo {
+        border-bottom: 2px solid var(--primaria);
+    }
+
+    #ft {
+        display: none;
+    }
+}
