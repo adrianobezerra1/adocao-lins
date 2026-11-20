@@ -1,0 +1,148 @@
+@import "../styles/global.css";
+@import "../styles/styleguide.css";
+
+*{
+     font-family: 'Roboto', sans-serif; 
+}
+
+
+.cabecalho-desktop {
+    position: sticky;
+    z-index: 10;
+  
+    position: sticky;
+    top: 16px;
+    margin: 0 auto;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: min(90%, 900px);
+    height: 64px;
+    padding: 0 clamp(12px, 3vw, 24px);
+
+    background: #ffffff93;
+    border-radius: 999px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.26);
+}
+
+
+
+.cabecalho-desktop nav {
+    position: static;
+    flex: 2;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: clamp(8px, 2vw, 15px);
+}
+
+.cabecalho-desktop .cabecalho-logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.cabecalho-desktop .cabecalho-logo a img {
+    width: 40px;
+    height: 40px;
+}
+
+.cabecalho-desktop .cabecalho-logo a span {
+    font-size: clamp(14px, 1.8vw, 20px);
+    font-weight: bold;
+    color: var(--texto-escuro);
+}
+
+.cabecalho-menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* escopado na home pra não sobrescrever o header padrão */
+
+.cabecalho-desktop nav ul li a {
+    color: var(--texto-escuro);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.cabecalho-desktop nav ul .menu-ativo {
+    border-bottom-color: var(--primaria);
+}
+
+/* Barra de pesquisa */
+
+.cabecalho-busca {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cabecalho-busca button {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.cabecalho-busca button svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.cabecalho-busca input {
+    width: clamp(80px, 12vw, 150px);
+    height: 40px;
+    padding: 10px;
+    margin-right: 10px;
+
+    color: var(--texto-escuro);
+    font-size: var(--text-p);
+
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--primaria);
+    border-radius: 0;
+}
+
+.cabecalho-busca input::placeholder {
+    padding-left: 10px;
+    color: var(--texto-escuro);
+    font-size: var(--text-p);
+    font-weight: 700;
+}
+
+.cabecalho-busca input:focus {
+    outline: none;
+    border-bottom: 2px solid var(--primaria);
+}
+
+.cabecalho-busca svg path,
+.cabecalho-busca svg circle,
+.cabecalho-busca svg rect {
+    stroke: #000000;
+    stroke-width: 2px;
+}
