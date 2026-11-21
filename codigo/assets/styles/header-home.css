@@ -6,161 +6,163 @@
 }
 
 @media (min-width: 769px) {
-    .nav-mobile {
+
+      .nav-mobile,
+    .logo-mobile {
         display: none;
     }
-
 
     .cabecalho-desktop nav ul a:hover {
         border-bottom-color: var(--primaria);
     }
 
-}
+    /* Fixo na tela (o .hero tem overflow: hidden, então sticky não funciona) */
+    .hero header {
+        position: fixed;
+        top: var(--header-respiro);
+        left: 0;
+        right: 0;
+        z-index: 10;
+        height: auto;
+        background: transparent;
+    }
 
-.hero header {
-    position: fixed;
-    top: 16px;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    height: auto;
-    background: transparent;
-}
+    /* Pílula */
 
+    .cabecalho-desktop {
+        position: relative;
+        margin: 0 auto;
 
-.cabecalho-desktop {
-    position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-    margin: 0 auto;
+        width: min(90%, 900px);
+        height: var(--header-altura);
+        padding: 0 clamp(0.75rem, 3vw, 1.5rem);
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        background: #ffffff93;
+        border-radius: 999px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.26);
+    }
 
-    width: min(90%, 900px);
-    height: 64px;
-    padding: 0 clamp(12px, 3vw, 24px);
+    .cabecalho-desktop nav {
+        position: static;
+        flex: 2;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: clamp(0.5rem, 2vw, 0.9375rem);
+    }
 
-    background: #ffffff93;
-    border-radius: 999px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.26);
-}
+    /* Logo */
 
+    .cabecalho-desktop .cabecalho-logo a {
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+        text-decoration: none;
+    }
 
+    .cabecalho-desktop .cabecalho-logo a img {
+        width: var(--icone);
+        height: var(--icone);
+    }
 
-.cabecalho-desktop nav {
-    position: static;
-    flex: 2;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    gap: clamp(8px, 2vw, 15px);
-}
+    .cabecalho-desktop .cabecalho-logo a span {
+        font-size: clamp(0.875rem, 1.8vw, 1.25rem);
+        font-weight: bold;
+        color: var(--texto-escuro);
+    }
 
-.cabecalho-desktop .cabecalho-logo a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-}
+    /* Menu */
 
-.cabecalho-desktop .cabecalho-logo a img {
-    width: 40px;
-    height: 40px;
-}
+    .cabecalho-menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
 
-.cabecalho-desktop .cabecalho-logo a span {
-    font-size: clamp(14px, 1.8vw, 20px);
-    font-weight: bold;
-    color: var(--texto-escuro);
-}
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: clamp(0.5rem, 2vw, 0.9375rem);
 
-.cabecalho-menu {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 15px;
+    .cabecalho-desktop nav ul li a {
+        color: var(--texto-escuro);
+        font-size: var(--text-h3);
+        font-weight: bold;
+        text-decoration: none;
+        padding-bottom: 0.25rem;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s ease;
+    }
 
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+    .cabecalho-desktop nav ul .menu-ativo {
+        border-bottom-color: var(--primaria);
+    }
 
-/* escopado na home pra não sobrescrever o header padrão */
+    /* Barra de pesquisa */
 
-.cabecalho-desktop nav ul li a {
-    color: var(--texto-escuro);
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    padding-bottom: 4px;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s ease;
-}
+    .cabecalho-busca {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.625rem;
+    }
 
-.cabecalho-desktop nav ul .menu-ativo {
-    border-bottom-color: var(--primaria);
-}
+    .cabecalho-busca button {
+        width: var(--icone);
+        height: var(--icone);
 
-/* Barra de pesquisa */
+        background-color: transparent;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
-.cabecalho-busca {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-}
+    .cabecalho-busca button svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
 
-.cabecalho-busca button {
-    background-color: transparent;
-    border: none;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
+    .cabecalho-busca input {
+        width: clamp(5rem, 12vw, 9.375rem);
+        height: var(--icone);
+        padding: 0.625rem;
+        margin-right: 0.625rem;
 
-.cabecalho-busca button svg {
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-}
+        color: var(--texto-escuro);
+        font-family: 'Roboto', sans-serif;
+        font-size: var(--text-body);
 
-.cabecalho-busca input {
-    width: clamp(80px, 12vw, 150px);
-    height: 40px;
-    padding: 10px;
-    margin-right: 10px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid var(--primaria);
+        border-radius: 0;
+    }
 
-    color: var(--texto-escuro);
-    font-size: var(--text-p);
+    .cabecalho-busca input::placeholder {
+        color: var(--texto-escuro);
+        font-size: var(--text-body);
+        font-weight: 700;
+    }
 
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid var(--primaria);
-    border-radius: 0;
-}
+    .cabecalho-busca input:focus {
+        outline: none;
+        border-bottom: 2px solid var(--primaria);
+    }
 
-.cabecalho-busca input::placeholder {
-    padding-left: 10px;
-    color: var(--texto-escuro);
-    font-size: var(--text-p);
-    font-weight: 700;
-}
-
-.cabecalho-busca input:focus {
-    outline: none;
-    border-bottom: 2px solid var(--primaria);
-}
-
-.cabecalho-busca svg path,
-.cabecalho-busca svg circle,
-.cabecalho-busca svg rect {
-    stroke: #000000;
-    stroke-width: 2px;
+    .cabecalho-busca svg path,
+    .cabecalho-busca svg circle,
+    .cabecalho-busca svg rect {
+        stroke: #000000;
+        stroke-width: 2px;
+    }
 }

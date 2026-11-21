@@ -1,15 +1,39 @@
 @import "/codigo/assets/styles/global.css";
 @import "/codigo/assets/styles/styleguide.css";
 
-header {
-    height: 96px;
-    background-color: var(--primaria);
+/* ==========================================
+   MEDIDAS DO HEADER
+   ========================================== */
+
+:root {
+    --header-altura: clamp(3.5rem, 8vw, 4rem);
+    /* 56 a 64px */
+    --header-respiro: clamp(0.5rem, 2vw, 1rem);
+    /* 8 a 16px */
+    --icone: clamp(2rem, 4vw, 2.5rem);
+    /* 32 a 40px */
+    --header-total: calc(var(--header-altura) + var(--header-respiro) * 2);
 }
 
+
+
 @media (min-width: 769px) {
+    header {
+        height: var(--header-total);
+        background-color: var(--primaria);
+    }
 
     .nav-mobile {
         display: none;
+    }
+
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
     }
 
     header nav button:hover {
@@ -21,161 +45,161 @@ header {
     }
 
 
-
-
-}
-
-/* ==========================================
+    /* ==========================================
    HEADER PADRÃO (demais páginas)
    ========================================== */
 
-.cabecalho-desktop {
-    font-family: 'Roboto', sans-serif;
-    position: sticky;
-    top: 16px;
-    margin: 0 auto;
-    z-index: 10;
+    .cabecalho-desktop {
+        font-family: 'Roboto', sans-serif;
+        position: relative;
+        /* ancora o .cabecalho-menu (absolute) na pílula */
+        margin: var(--header-respiro) auto 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-    width: min(90%, 900px);
-    height: 64px;
-    padding: 0 24px;
+        width: min(90%, 900px);
+        height: var(--header-altura);
+        padding: 0 clamp(0.75rem, 3vw, 1.5rem);
 
-    background: #E897C4;
-    border-radius: 999px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
+        background: #E897C4;
+        border-radius: 999px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
 
-.cabecalho-desktop nav {
-    position: static;
-    flex: 2;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-}
+    .cabecalho-desktop nav {
+        position: static;
+        flex: 2;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
 
-.cabecalho-desktop .cabecalho-logo a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-}
+    /* Logo */
 
-.cabecalho-desktop .cabecalho-logo a img {
-    width: 40px;
-    height: 40px;
-}
+    .cabecalho-desktop .cabecalho-logo a {
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+        text-decoration: none;
+    }
 
-.cabecalho-desktop .cabecalho-logo a span {
-    font-size: 20px;
-    font-weight: bold;
-    border-color: var(--primaria);
-    color: var(--secundaria);
-}
+    .cabecalho-desktop .cabecalho-logo a img {
+        width: var(--icone);
+        height: var(--icone);
+    }
 
-.cabecalho-menu {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    .cabecalho-desktop .cabecalho-logo a span {
+        font-size: var(--text-h3);
+        font-weight: bold;
+        color: var(--secundaria);
+    }
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 15px;
+    /* Menu */
 
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+    .cabecalho-menu {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
 
-.cabecalho-menu li a {
-    color: var(--texto-claro);
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    padding-bottom: 4px;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.3s ease;
-}
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: clamp(0.5rem, 2vw, 0.9375rem);
 
-header nav ul li a.ativo,
-header nav ul li a.menu-ativo {
-    border-bottom-color: var(--primaria);
-}
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
 
-header nav button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .cabecalho-menu li a {
+        color: var(--texto-claro);
+        font-size: var(--text-h3);
+        font-weight: bold;
+        text-decoration: none;
+        padding-bottom: 0.25rem;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s ease;
+    }
 
-    width: 40px;
-    height: 40px;
+    header nav ul li a.ativo,
+    header nav ul li a.menu-ativo {
+        border-bottom-color: var(--primaria);
+    }
 
-    background: none;
-    border: none;
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-}
+    header nav button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
+        width: var(--icone);
+        height: var(--icone);
 
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+    }
 
-/* Barra de pesquisa */
+    /* Barra de pesquisa */
 
-.cabecalho-busca {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
-}
+    .cabecalho-busca {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.625rem;
+    }
 
-.cabecalho-busca button {
-    background-color: transparent;
-    border: none;
-    text-decoration: none;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-}
+    .cabecalho-busca button {
+        width: var(--icone);
+        height: var(--icone);
 
-.cabecalho-busca button svg {
-    width: 100%;
-    height: 100%;
-}
+        background-color: transparent;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
-.cabecalho-busca input {
-    width: 150px;
-    height: 40px;
-    padding: 10px;
-    margin-right: 10px;
+    .cabecalho-busca button svg {
+        width: 100%;
+        height: 100%;
+    }
 
-    color: var(--secundaria);
-    font-size: var(--text-p);
+    .cabecalho-busca input {
+        width: clamp(5rem, 12vw, 9.375rem);
+        height: var(--icone);
+        padding: 0.625rem;
+        margin-right: 0.625rem;
 
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid var(--primaria);
-    border-radius: 0;
-}
+        color: var(--secundaria);
+        font-family: 'Roboto', sans-serif;
+        font-size: var(--text-body);
 
-.cabecalho-busca input::placeholder {
-    padding-left: 10px;
-    color: var(--secundaria);
-    font-size: var(--text-p);
-    font-weight: 700;
-}
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid var(--primaria);
+        border-radius: 0;
+    }
 
-.cabecalho-busca input:focus {
-    outline: none;
-    border-bottom: 2px solid var(--primaria);
-}
+    .cabecalho-busca input::placeholder {
+        color: var(--secundaria);
+        font-size: var(--text-body);
+        font-weight: 700;
+    }
 
-.cabecalho-busca svg path,
-svg circle,
-svg rect {
-    stroke: var(--secundaria);
-    stroke-width: 2px;
+    .cabecalho-busca input:focus {
+        outline: none;
+        border-bottom: 2px solid var(--primaria);
+    }
+
+    /* antes: "svg circle, svg rect" sem prefixo pegava o site todo */
+    .cabecalho-busca svg path,
+    .cabecalho-busca svg circle,
+    .cabecalho-busca svg rect {
+        stroke: var(--secundaria);
+        stroke-width: 2px;
+    }
+
 }
