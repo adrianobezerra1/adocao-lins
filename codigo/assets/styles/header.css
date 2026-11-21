@@ -1,5 +1,3 @@
-@import "/codigo/assets/styles/global.css";
-@import "/codigo/assets/styles/styleguide.css";
 
 /* ==========================================
    MEDIDAS DO HEADER
@@ -21,6 +19,8 @@
     header {
         height: var(--header-total);
         background-color: var(--primaria);
+        display: flex;
+        justify-content: center;
     }
 
     .nav-mobile {
@@ -28,13 +28,7 @@
     }
 
 
-    header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-    }
+  
 
     header nav button:hover {
         opacity: 0.8;
@@ -52,8 +46,8 @@
     .cabecalho-desktop {
         font-family: 'Roboto', sans-serif;
         position: relative;
-        /* ancora o .cabecalho-menu (absolute) na pílula */
-        margin: var(--header-respiro) auto 0;
+        
+        
 
         display: flex;
         align-items: center;
@@ -62,7 +56,7 @@
         width: min(90%, 900px);
         height: var(--header-altura);
         padding: 0 clamp(0.75rem, 3vw, 1.5rem);
-
+        margin-top: var(--header-respiro);
         background: #E897C4;
         border-radius: 999px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
