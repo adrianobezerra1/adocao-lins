@@ -13,6 +13,7 @@
         display: flex;
         justify-content: left;
         padding-left: var(--espaco-lateral);
+        padding-top: var(--header-respiro); 
     }
 
     .logo-mobile a {
