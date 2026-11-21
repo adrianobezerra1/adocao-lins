@@ -1,3 +1,6 @@
+@import "../styles/global.css";
+@import "../styles/styleguide.css";
+
 footer {
     position: relative;
     margin-top: var(--espaco-lateral);

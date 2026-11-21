@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./codigo/assets/styles/style.css">
     <link rel="icon" href="./codigo/assets/img/icons/Logo.png" type="image/png">
     <link rel="stylesheet" href="./codigo/assets/styles/footer.css">
+    <link rel="stylesheet" href="codigo/assets/styles/header-home.css">
+    <link rel="stylesheet" href="/codigo/assets/styles/nav-bar-mobile.css">
     <title>Adoção Lins</title>
 </head>
 
@@ -14,25 +16,30 @@
 
 
     <main>
+        <div class="hero">
 
-        <section class="hero">
-            <header class="header-desktop">
-                <div class="header-container">
-                    <div class="logo-wrapper">
-                        <a href="./index.html">
-                            <img src="./codigo/assets/img/icons/Logo.png" alt="logo adoção lins" class="logo">
+            <div class="logo-mobile">
+                <a href="/index.html">
+                    <img src="/codigo/assets/img/icons/Logo.png" alt="logo adoção lins" class="logo">
+                    <span class="site-name">Adoção Lins</span>
+                </a>
+            </div>
+            <header>
+                <div class="cabecalho-desktop">
+                    <div class="cabecalho-logo">
+                        <a href="/index.html">
+                            <img src="/codigo/assets/img/icons/Logo.png" alt="logo adoção lins" class="logo">
                             <span class="site-name">Adoção Lins</span>
                         </a>
                     </div>
                     <nav>
-                        <ul class="header-nav">
-                            <li><a href="./index.html" class="ativo">Início</a></li>
-                            <li><a href="./codigo/pages/animais.html">Animais</a></li>
-                            <li><a href="./codigo/pages/sobre-contato.html">Sobre/Contato</a></li>
+                        <ul class="cabecalho-menu">
+                            <li><a href="/index.html" class="menu-ativo">Início</a></li>
+                            <li><a href="/codigo/pages/animais.html">Animais</a></li>
+                            <li><a href="/codigo/pages/sobre-contato.html">Sobre/Contato</a></li>
                         </ul>
-
                     </nav>
-                    <div class="search-bar">
+                    <div class="cabecalho-busca">
                         <input type="text" autofocus placeholder="Pesquisar">
                         <button>
                             <svg width="30" height="30" viewBox="0 0 26 30" fill="none"
@@ -41,75 +48,82 @@
                                     d="M18.7427 21.8392L24.5167 28.6577M21.8482 13.0145C21.8482 19.9262 17.0692 25.5291 11.1741 25.5291C5.27894 25.5291 0.5 19.9262 0.5 13.0145C0.5 6.10295 5.27894 0.5 11.1741 0.5C17.0692 0.5 21.8482 6.10295 21.8482 13.0145Z"
                                     stroke-linecap="round" stroke-linejoin="round" stroke="#333333" />
                             </svg>
-
                         </button>
                     </div>
                 </div>
-            </header>
 
-            <header class="header-mobile">
-                <a href="">
-                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                            <path d="M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z"
-                                fill="#000000"></path>
-                        </g>
-                    </svg>
-                </a>
 
-                <a>
-                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                            <path
-                                d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
-                                stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </g>
-                    </svg>
-                </a>
-                <a>
-                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M16 4V7C16 9.20914 14.2091 11 12 11H10V15H0V13L0.931622 10.8706C1.25226 10.9549 1.59036 11 1.94124 11C3.74931 11 5.32536 9.76947 5.76388 8.01538L3.82359 7.53031C3.60766 8.39406 2.83158 9.00001 1.94124 9.00001C1.87789 9.00001 1.81539 8.99702 1.75385 8.99119C1.02587 8.92223 0.432187 8.45551 0.160283 7.83121C0.0791432 7.64491 0.0266588 7.44457 0.00781272 7.23658C-0.0112323 7.02639 0.00407892 6.80838 0.0588889 6.58914C0.0588882 6.58914 0.0588896 6.58913 0.0588889 6.58914L0.698705 4.02986C1.14387 2.24919 2.7438 1 4.57928 1H10L12 4H16ZM9 6C9.55229 6 10 5.55228 10 5C10 4.44772 9.55229 4 9 4C8.44771 4 8 4.44772 8 5C8 5.55228 8.44771 6 9 6Z"
-                                fill="#000000"></path>
-                        </g>
-                    </svg>
-                </a>
-                <a href="">
-                    <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                            <title>about</title>
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="about-white" fill="#000000" transform="translate(42.666667, 42.666667)">
+                <nav class="nav-mobile" aria-label="Principal (mobile)">
+                    <button>
+                        <a href="/index.html">
+                            <svg class="atv" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
                                     <path
-                                        d="M213.333333,3.55271368e-14 C95.51296,3.55271368e-14 3.55271368e-14,95.51168 3.55271368e-14,213.333333 C3.55271368e-14,331.153707 95.51296,426.666667 213.333333,426.666667 C331.154987,426.666667 426.666667,331.153707 426.666667,213.333333 C426.666667,95.51168 331.154987,3.55271368e-14 213.333333,3.55271368e-14 Z M213.333333,384 C119.227947,384 42.6666667,307.43872 42.6666667,213.333333 C42.6666667,119.227947 119.227947,42.6666667 213.333333,42.6666667 C307.44,42.6666667 384,119.227947 384,213.333333 C384,307.43872 307.44,384 213.333333,384 Z M240.04672,128 C240.04672,143.46752 228.785067,154.666667 213.55008,154.666667 C197.698773,154.666667 186.713387,143.46752 186.713387,127.704107 C186.713387,112.5536 197.99616,101.333333 213.55008,101.333333 C228.785067,101.333333 240.04672,112.5536 240.04672,128 Z M192.04672,192 L234.713387,192 L234.713387,320 L192.04672,320 L192.04672,192 Z"
-                                        id="Shape"> </path>
+                                        d="M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z"
+                                        fill="#D1328A"></path>
                                 </g>
-                            </g>
-                        </g>
-                    </svg>
-                </a>
+                            </svg>
+                        </a>
+                    </button>
 
+                    <button>
+                        <a href="#">
+                            <svg viewBox="0 0 24 24" fill="#F7F7FA" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                    <path
+                                        d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                                        stroke="#F7F7FA" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                    </button>
 
-
+                    <button>
+                        <a href="/codigo/pages/animais.html">
+                            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16 4V7C16 9.20914 14.2091 11 12 11H10V15H0V13L0.931622 10.8706C1.25226 10.9549 1.59036 11 1.94124 11C3.74931 11 5.32536 9.76947 5.76388 8.01538L3.82359 7.53031C3.60766 8.39406 2.83158 9.00001 1.94124 9.00001C1.87789 9.00001 1.81539 8.99702 1.75385 8.99119C1.02587 8.92223 0.432187 8.45551 0.160283 7.83121C0.0791432 7.64491 0.0266588 7.44457 0.00781272 7.23658C-0.0112323 7.02639 0.00407892 6.80838 0.0588889 6.58914C0.0588882 6.58914 0.0588896 6.58913 0.0588889 6.58914L0.698705 4.02986C1.14387 2.24919 2.7438 1 4.57928 1H10L12 4H16ZM9 6C9.55229 6 10 5.55228 10 5C10 4.44772 9.55229 4 9 4C8.44771 4 8 4.44772 8 5C8 5.55228 8.44771 6 9 6Z"
+                                        fill="#F7F7FA"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </button>
+                    <button>
+                        <a href="/codigo/pages/sobre-contato.html">
+                            <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" fill="#F7F7FA">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                                    <title>about</title>
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="about-white" fill="#F7F7FA" transform="translate(42.666667, 42.666667)">
+                                            <path
+                                                d="M213.333333,3.55271368e-14 C95.51296,3.55271368e-14 3.55271368e-14,95.51168 3.55271368e-14,213.333333 C3.55271368e-14,331.153707 95.51296,426.666667 213.333333,426.666667 C331.154987,426.666667 426.666667,331.153707 426.666667,213.333333 C426.666667,95.51168 331.154987,3.55271368e-14 213.333333,3.55271368e-14 Z M213.333333,384 C119.227947,384 42.6666667,307.43872 42.6666667,213.333333 C42.6666667,119.227947 119.227947,42.6666667 213.333333,42.6666667 C307.44,42.6666667 384,119.227947 384,213.333333 C384,307.43872 307.44,384 213.333333,384 Z M240.04672,128 C240.04672,143.46752 228.785067,154.666667 213.55008,154.666667 C197.698773,154.666667 186.713387,143.46752 186.713387,127.704107 C186.713387,112.5536 197.99616,101.333333 213.55008,101.333333 C228.785067,101.333333 240.04672,112.5536 240.04672,128 Z M192.04672,192 L234.713387,192 L234.713387,320 L192.04672,320 L192.04672,192 Z"
+                                                id="Shape"> </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </button>
+                </nav>
             </header>
 
-
-            </header>
-            <video autoplay muted loop id="video-fundo">
+            <video autoplay muted loop playsinline aria-hidden="true" id="video-fundo">
                 <source src="./codigo/assets/videos/1115.mp4" type="video/mp4">
             </video>
 
@@ -127,89 +141,89 @@
 
 
             <div class="hero-conteudo">
-                <a href="#animais">
-                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="#animais" aria-label="Ver animais em destaque">
+                    <svg aria-hidden="true" width="60" height="60" viewBox="0 0 60 60" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path d="M52.9237 15L56.25 17.955L30 45L3.75 17.955L7.07625 15L30 38.6175L52.9237 15Z"
                             fill="#F7F7FA" />
                     </svg>
                 </a>
-
             </div>
 
-        </section>
+        </div>
         <div class="fundo">
             <article>
+                <div class="conteudo">
+                    <section class="animais-destaque" aria-labelledby="titulo-destaque">
+                        <nav>
+                            <h2>Animais em destaque</h2>
+                            <div class="ver-todos">
+                                <a href="./codigo/pages/animais.html">Ver todos <svg width="25" height="24"
+                                        viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.8213 0.439336C13.36 -0.146445 14.2336 -0.146445 14.7724 0.439336L24.4302 10.9394C24.969 11.5251 24.969 12.4749 24.4302 13.0607L14.7724 23.5607C14.2336 24.1464 13.36 24.1464 12.8213 23.5607C12.2825 22.9749 12.2825 22.0251 12.8213 21.4394L20.1238 13.5H1.37968C0.617712 13.5 0 12.8285 0 12C0 11.1716 0.617712 10.5 1.37968 10.5H20.1238L12.8213 2.56067C12.2825 1.97487 12.2825 1.02513 12.8213 0.439336Z"
+                                            fill-rule="evenodd" clip-rule="evenodd" fill="#D1328A" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </nav>
 
-                <section class="animais-destaque">
-                    <nav>
-                        <h2>Animais em destaque</h2>
-                        <div class="ver-todos">
-                            <a href="./codigo/pages/animais.html">Ver todos <svg width="25" height="24"
-                                    viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div class="animais" id="animais">
+                            carregando ...
+                        </div>
+                    </section>
+
+                    <section class="banner-adocao" aria-labelledby="titulo-banner">
+                        <div class="aside-left">
+                            <div class="aside-image">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M12.8213 0.439336C13.36 -0.146445 14.2336 -0.146445 14.7724 0.439336L24.4302 10.9394C24.969 11.5251 24.969 12.4749 24.4302 13.0607L14.7724 23.5607C14.2336 24.1464 13.36 24.1464 12.8213 23.5607C12.2825 22.9749 12.2825 22.0251 12.8213 21.4394L20.1238 13.5H1.37968C0.617712 13.5 0 12.8285 0 12C0 11.1716 0.617712 10.5 1.37968 10.5H20.1238L12.8213 2.56067C12.2825 1.97487 12.2825 1.02513 12.8213 0.439336Z"
-                                        fill-rule="evenodd" clip-rule="evenodd" fill="#D1328A" />
+                                        d="M1.82685 12.416L11.7611 24L21.6954 12.416C22.8651 11.052 23.5222 9.20205 23.5222 7.2731V6.94687C23.5222 3.11023 20.8549 0 17.5648 0C15.7549 0 14.0432 0.959297 12.9127 2.60719L11.7611 4.28571L10.6095 2.60719C9.47896 0.959297 7.7673 0 5.9575 0C2.66727 0 0 3.11023 0 6.94687V7.2731C0 9.20205 0.657137 11.052 1.82685 12.416Z"
+                                        fill="#333333" />
                                 </svg>
-                            </a>
+                            </div>
+                            <div class="aside-text">
+                                <h2>Adotar é um ato de amor!</h2>
+                                <p>Você não está apenas levando um pet para casa,<br> mas também dando uma nova
+                                    oportunidade
+                                    de
+                                    vida.
+                                </p>
+                            </div>
                         </div>
-                    </nav>
-
-                    <div class="animais" id="animais">
-                        carregando ...
-                    </div>
-
-                </section>
-
-                <aside>
-                    <div class="aside-left">
-                        <div class="aside-image">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1.82685 12.416L11.7611 24L21.6954 12.416C22.8651 11.052 23.5222 9.20205 23.5222 7.2731V6.94687C23.5222 3.11023 20.8549 0 17.5648 0C15.7549 0 14.0432 0.959297 12.9127 2.60719L11.7611 4.28571L10.6095 2.60719C9.47896 0.959297 7.7673 0 5.9575 0C2.66727 0 0 3.11023 0 6.94687V7.2731C0 9.20205 0.657137 11.052 1.82685 12.416Z"
-                                    fill="#333333" />
-                            </svg>
-                        </div>
-                        <div class="aside-text">
-                            <h2>Adotar é um ato de amor!</h2>
-                            <p>Você não está apenas levando um pet para casa,<br> mas também dando uma nova oportunidade
-                                de
-                                vida.
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <a href="./codigo/pages/adt-amor.html"><button>Saiba mais</button></a>
-                </aside>
-
-
-            </article>
-            <footer>
-                <div class="logo-wrapper">
-                    <a href="./index.html">
-                        <img src="./codigo/assets/img/icons/Logo.png" alt="logo adoção lins" class="logo">
-                        <span class="site-name">Adoção Lins</span>
-                    </a>
+                        <a href="./codigo/pages/adt-amor.html"><button>Saiba mais</button></a>
+                    </section>
                 </div>
-                <nav class="footer-nav">
-                    <ul class="footer-nav-list">
-                        <li><a href="./index.html" class="ativo">Início</a></li>
-                        <li><a href="./codigo/pages/animais.html">Animais</a></li>
-                        <li><a href="./codigo/pages/sobre-contato.html">Sobre/Contato</a></li>
-                    </ul>
-                    <p>© <span id="ano"></span> Adoção Lins. Todos os direitos reservados.</p>
-                </nav>
-
-                <ul class="social-media">
-                    <li><a href="#"><img src="./codigo/assets/img/icons/facebook.png" alt="logo facebook"></a></li>
-                    <li><a href="#"><img src="./codigo/assets/img/icons/insta.png" alt="logo instagram"></a></li>
-                    <li id="whatsapp"><a href="#"><img src="./codigo/assets/img/icons/WhatsApp.png"
-                                alt="logo do whatsapp"></a></li>
-                </ul>
-            </footer>
+            </article>
         </div>
     </main>
+
+
+
+    <footer id="ft">
+        <div class="logo-wrapper">
+            <a href="./index.html">
+                <img src="./codigo/assets/img/icons/Logo.png" alt="logo adoção lins" class="logo">
+                <span class="site-name">Adoção Lins</span>
+            </a>
+        </div>
+        <nav class="footer-nav">
+            <ul class="footer-nav-list">
+                <li><a href="./index.html" class="ativo">Início</a></li>
+                <li><a href="./codigo/pages/animais.html">Animais</a></li>
+                <li><a href="./codigo/pages/sobre-contato.html">Sobre/Contato</a></li>
+            </ul>
+            <p>© <span id="ano"></span> Adoção Lins. Todos os direitos reservados.</p>
+        </nav>
+
+        <ul class="social-media">
+            <li><a href="#"><img src="./codigo/assets/img/icons/facebook.png" alt="logo facebook"></a></li>
+            <li><a href="#"><img src="./codigo/assets/img/icons/insta.png" alt="logo instagram"></a></li>
+            <li id="whatsapp"><a href="#"><img src="./codigo/assets/img/icons/WhatsApp.png" alt="logo do whatsapp"></a>
+            </li>
+        </ul>
+    </footer>
 </body>
 
 <script src="./codigo/assets/js/scripts.js" type="module"></script>

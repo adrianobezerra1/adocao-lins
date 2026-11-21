@@ -1,0 +1,97 @@
+@import "../styles/global.css";
+@import "../styles/styleguide.css";
+
+
+
+@media (max-width: 768px) {
+    .cabecalho-desktop {
+        display: none;
+    }
+
+    /* Logo no topo: mesmo respiro lateral do hero */
+    .logo-mobile {
+        display: flex;
+        justify-content: left;
+        padding-left: var(--espaco-lateral);
+    }
+
+    .logo-mobile a {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.625rem;
+        text-decoration: none;
+    }
+
+    .logo-mobile a img {
+        width: clamp(2.5rem, 12vw, 3.125rem);   /* 40 a 50px */
+        height: clamp(2.5rem, 12vw, 3.125rem);
+    }
+
+    .logo-mobile a span {
+        text-decoration: none;
+        font-size: var(--text-h2);              /* 20px no celular */
+        font-weight: bold;
+        color: var(--secundaria);
+    }
+
+    /* Barra fixa no final */
+    .nav-mobile {
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        bottom: max(0.625rem, env(safe-area-inset-bottom));
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(0.75rem, 4vw, 1.25rem);
+
+        width: min(90vw, 20rem);
+        height: var(--nav-mobile-altura);
+        padding: 0.625rem;
+
+        background: #333333;
+        border-radius: 999px;
+    }
+
+    /* serve para <a> direto ou para o <button><a> antigo */
+    .nav-mobile a,
+    .nav-mobile button {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0;
+        padding: 0.3125rem;
+        background: transparent;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .nav-mobile svg {
+        margin: 0;
+        width: clamp(1.5rem, 6vw, 1.875rem);    /* 24 a 30px */
+        height: clamp(1.5rem, 6vw, 1.875rem);
+    }
+
+    .atv,
+    .mobile-ativo {
+        border-bottom: 2px solid var(--primaria);
+    }
+
+    /* a barra não cobre o final da página */
+    body {
+        padding-bottom: calc(var(--nav-mobile-altura) + 1.5rem);
+    }
+
+    #ft {
+        display: none;
+    }
+}

@@ -20,7 +20,7 @@ function cardanimal(animal){
         <div class="cardsanimal">
             <img src="${animal.fotos[0]}" alt="${animal.nome}">
             <h3>${animal.nome}</h3>
-            <p>${animal.especie}</p>
+            <p>${animal.sexo} ${animal.idade}</p>
             <a href="./perfil-animal.html?id=${animal.id}&origem=animal">
                 <button>QUERO ADOTAR</button>
             </a>
