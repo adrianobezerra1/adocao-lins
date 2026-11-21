@@ -1,43 +1,65 @@
-@import "../styles/global.css";
-@import "../styles/styleguide.css";
+
 
 footer {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
     position: relative;
-    margin-top: var(--espaco-lateral);
-    background-color: var(--primaria);
     width: 100%;
-    height: 90px;
+    min-height: 6.25rem;
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+
+    background-color: var(--primaria);
 }
-footer .logo-wrapper{
-    margin-left: 80px;
+
+/* Logo */
+
+footer .logo-wrapper {
+    margin-left: var(--espaco-lateral);
 }
+
 footer .logo-wrapper a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:20px;
+    gap: clamp(0.75rem, 2vw, 1.25rem);
+    width: auto;
 }
-footer .logo-wrapper a img{
-    width: 60px;
-    height: 60px;
+
+footer .logo-wrapper a img {
+    width: clamp(2.5rem, 6vw, 3.75rem);
+    height: clamp(2.5rem, 6vw, 3.75rem);
 }
-footer .logo-wrapper span{
+
+footer .logo-wrapper span {
     text-decoration: none;
     font-size: var(--text-h3);
     color: var(--texto-claro);
     font-weight: bold;
 }
 
+/* Menu + copyright (centralizado no footer) */
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .footer-nav-list {
     display: flex;
+    flex-direction: row;
+    gap: clamp(1rem, 3vw, 1.5rem);
     list-style: none;
-    gap: 24px;
     margin: 0;
     padding: 0;
-    flex-direction: row;
 }
 
 .footer-nav-list li a {
@@ -45,8 +67,8 @@ footer .logo-wrapper span{
     text-decoration: none;
     font-size: var(--text-h3);
     font-weight: bold;
-    padding-bottom: 4px;
-    border-bottom: 2px solid transparent; 
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid transparent;
     transition: border-color 0.3s ease;
 }
 
@@ -55,36 +77,26 @@ footer .logo-wrapper span{
     border-bottom-color: var(--secundaria);
 }
 
-
-.footer-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .footer-nav p {
-    margin: 10px;
-    ;
+    margin: 0.625rem;
     color: var(--texto-claro);
     font-size: var(--text-sm);
     font-weight: 400;
 }
 
+/* Redes sociais */
+
 .social-media {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 20px;
-    margin-right: 80px;
+    gap: clamp(0.75rem, 2vw, 1.25rem);
+    margin-right: var(--espaco-lateral);
 }
 
 .social-media li a img {
-    width: 30px;
-    height: 30px;
+    width: clamp(1.5rem, 4vw, 1.875rem);
+    height: clamp(1.5rem, 4vw, 1.875rem);
 }
 
 .social-media li a img:hover {
@@ -94,6 +106,39 @@ footer .logo-wrapper span{
 }
 
 #whatsapp img {
-    width: 35px;
-    height: 35px;
+    width: clamp(1.75rem, 4.5vw, 2.1875rem);
+    height: clamp(1.75rem, 4.5vw, 2.1875rem);
+}
+
+/* ==========================================
+   TELAS PEQUENAS: footer empilhado
+   ========================================== */
+
+@media (max-width: 900px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem var(--espaco-lateral);
+        text-align: center;
+    }
+
+    footer .logo-wrapper {
+        margin-left: 0;
+    }
+
+    .footer-nav {
+        position: static;
+        transform: none;
+    }
+
+    .footer-nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-media {
+        justify-content: center;
+        margin-right: 0;
+    }
 }
