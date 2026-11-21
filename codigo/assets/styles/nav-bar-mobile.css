@@ -4,13 +4,11 @@
 
 
 @media (max-width: 768px) {
-    .header-desktop,
     .cabecalho-desktop {
         display: none;
     }
 
-    .header-mobile,
-    .cabecalho-mobile {
+    .nav-mobile {
         position: fixed;
         z-index: 10;
         background: #333333;
@@ -28,8 +26,7 @@
         width: 40vh;
     }
 
-    .header-mobile button,
-    .cabecalho-mobile button {
+    .nav-mobile button {
         margin: 0;
         width: 8vh;
         padding: 5px;
@@ -38,8 +35,8 @@
         text-decoration: none;
     }
 
-    .header-mobile button a svg,
-    .cabecalho-mobile button a svg {
+
+    .nav-mobile button a svg {
         margin: 0;
         width: 30px;
         height: 30px;
