@@ -1,7 +1,9 @@
-
-
-
 @media (max-width: 768px) {
+
+    .hero-conteudo svg {
+        bottom: 80px;
+    }   
+
     .cabecalho-desktop {
         display: none;
     }
@@ -11,7 +13,7 @@
         display: flex;
         justify-content: left;
         padding-left: var(--espaco-lateral);
-        padding-top: var(--header-respiro); 
+        padding-top: var(--header-respiro);
     }
 
     .logo-mobile a {
@@ -24,13 +26,15 @@
     }
 
     .logo-mobile a img {
-        width: clamp(2.5rem, 12vw, 3.125rem);   /* 40 a 50px */
+        width: clamp(2.5rem, 12vw, 3.125rem);
+        /* 40 a 50px */
         height: clamp(2.5rem, 12vw, 3.125rem);
     }
 
     .logo-mobile a span {
         text-decoration: none;
-        font-size: var(--text-h2);              /* 20px no celular */
+        font-size: var(--text-h2);
+        /* 20px no celular */
         font-weight: bold;
         color: var(--secundaria);
     }
@@ -76,7 +80,8 @@
 
     .nav-mobile svg {
         margin: 0;
-        width: clamp(1.5rem, 6vw, 1.875rem);    /* 24 a 30px */
+        width: clamp(1.5rem, 6vw, 1.875rem);
+        /* 24 a 30px */
         height: clamp(1.5rem, 6vw, 1.875rem);
     }
 
