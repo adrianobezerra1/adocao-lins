@@ -7,26 +7,26 @@ html {
 /* ==============================
    CONFIGURAÇÕES GERAIS
 ============================== */
- 
+
 body {
     background-color: var(--fundo);
     font-family: 'Roboto', sans-serif;
 }
 
 .conteiner {
-    margin: 0 80px;
+    margin: 0 clamp(1rem, 5vw, 5rem);
 }
 
 .center-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
-    margin: 0 80px;
+    gap: clamp(1rem, 2vw, 1.875rem);
+    margin: 0 clamp(1rem, 5vw, 5rem);
 }
 
 article {
-    margin: 0 80px;
+    margin: 0 clamp(1rem, 5vw, 5rem);
 }
 
 /* ==============================
@@ -36,12 +36,11 @@ article {
 .hero-banner {
     display: flex;
     align-items: center;
-    gap: 30px;
-    height: 100px;
-    padding: 0 80px;
+    gap: clamp(1rem, 2vw, 1.875rem);
+    min-height: clamp(5rem, 10vw, 6.25rem);
+    padding: 0 clamp(1rem, 5vw, 5rem);
     background-color: var(--primaria);
     color: var(--texto-claro);
-
 }
 
 .hero-content h1 {
@@ -60,8 +59,8 @@ article {
 .hero-icon {
     display: flex;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: clamp(2rem, 4vw, 2.5rem);
+    height: clamp(2rem, 4vw, 2.5rem);
 }
 
 /* ==============================
@@ -71,22 +70,22 @@ article {
 .filter-bar {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-    gap: 15px;
-    margin: 30px 80px 10px;
+    gap: clamp(0.5rem, 1.5vw, 0.9375rem);
+    margin: 1.875rem clamp(1rem, 5vw, 5rem) 0.625rem;
 }
 
 .search-wrapper {
     position: relative;
     display: flex;
     align-items: center;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.25rem 3.125rem rgba(0, 0, 0, 0.25);
 }
 
 .search-wrapper input {
     width: 100%;
-    padding: 10px 40px 10px 15px;
+    padding: 0.625rem 2.5rem 0.625rem 0.9375rem;
     border: 1px solid var(--secundaria);
-    border-radius: 6px;
+    border-radius: 0.375rem;
     font-size: 0.9rem;
     outline: none;
 }
@@ -98,25 +97,25 @@ article {
 
 .search-wrapper i {
     position: absolute;
-    right: 15px;
+    right: 0.9375rem;
     color: var(--secundaria);
 }
 
 .filter-bar select {
-    padding: 10px 15px;
+    padding: 0.625rem 0.9375rem;
     border: 1px solid var(--secundaria);
-    border-radius: 6px;
+    border-radius: 0.375rem;
     background-color: #ffffff;
     color: #000000;
     font-size: 0.9rem;
     outline: none;
     cursor: pointer;
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.25rem 3.125rem rgba(0, 0, 0, 0.25);
 }
 
 .busca-animais {
     border: 1px solid var(--secundaria);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: var(--secundaria);
     color: var(--texto-card);
 }
@@ -133,14 +132,14 @@ article {
 .animais {
     display: flex;
     flex-direction: row;
-    gap: 17px;
+    gap: 1.0625rem;
 }
 
 .animals-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin: 30px 80px 90px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1rem, 2vw, 1.5625rem);
+    margin: 1.875rem clamp(1rem, 5vw, 5rem) 5.625rem;
 }
 
 /* ==============================
@@ -148,11 +147,11 @@ article {
 ============================== */
 
 .cardsanimal {
-    padding: 10px;
+    padding: 0.625rem;
     border: 1px solid var(--secundaria);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: var(--cards);
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.25rem 3.125rem rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -163,17 +162,17 @@ article {
 
 .cardsanimal img {
     width: 100%;
-    height: 200px;
+    height: clamp(9rem, 20vw, 12.5rem);
     object-fit: contain;
     object-position: center;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .cardsanimal h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
     font-size: var(--text-h3);
     font-weight: bold;
 }
@@ -190,10 +189,10 @@ article {
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 10px;
-    padding: 10px 20px;
+    margin-top: 0.625rem;
+    padding: 0.625rem 1.25rem;
     border: 1px solid var(--secundaria);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: var(--primaria);
     color: var(--texto-claro);
     font-size: var(--text-h3);
@@ -216,19 +215,19 @@ article {
 ============================== */
 
 .aside-wrapper {
-    margin: 90px 0;
+    margin: clamp(3rem, 7vw, 5.625rem) 0;
 }
 
 aside {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: calc(100% - 160px);
-    height: 120px;
-    margin: 0 80px;
-    padding: 0 53px;
+    width: calc(100% - clamp(2rem, 10vw, 10rem));
+    min-height: clamp(7.5rem, 12vw, 9rem);
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 3.3vw, 3.3125rem);
     background-color: var(--cards);
-    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.25rem 3.125rem rgba(0, 0, 0, 0.25);
 }
 
 aside h2 {
@@ -242,8 +241,8 @@ aside p {
 }
 
 .aside-image {
-    width: 40px;
-    height: 40px;
+    width: clamp(2rem, 4vw, 2.5rem);
+    height: clamp(2rem, 4vw, 2.5rem);
 }
 
 .aside-text {
@@ -251,22 +250,22 @@ aside p {
     flex-direction: column;
     align-items: baseline;
     justify-content: space-between;
-    margin-left: 23px;
+    margin-left: 1.4375rem;
 }
 
 .aside-left {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 aside button {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     border: 1px solid var(--secundaria);
-    border-radius: 10px;
+    border-radius: 0.625rem;
     background-color: var(--primaria);
     color: var(--texto-claro);
     font-size: var(--text-h3);
@@ -285,7 +284,56 @@ aside button:hover {
 ============================== */
 
 .Animais2 {
-    width: 50px;
-    height: 50px;
-    margin-right: 29px;
+    width: clamp(2.5rem, 5vw, 3.125rem);
+    height: clamp(2.5rem, 5vw, 3.125rem);
+    margin-right: clamp(0.5rem, 2vw, 1.8125rem);
+}
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+@media (max-width: 48rem) {
+
+    .filter-bar {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .animals-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    aside {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 30rem) {
+
+    .hero-banner {
+        padding: 1rem;
+    }
+
+    .filter-bar {
+        grid-template-columns: 1fr;
+    }
+
+    .animals-grid {
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.25rem;
+    }
+
+    aside button {
+        width: 100%;
+    }
+
+    .center-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

@@ -1,4 +1,3 @@
-
 html {
   scroll-behavior: smooth;
 }
@@ -9,24 +8,29 @@ body {
 }
 
 main {
-  margin: 20px 80px;
+  margin: clamp(1rem, 3vw, 1.25rem) var(--espaco-lateral);
 }
+
+/* ==============================
+   LINK VOLTAR
+============================== */
 
 .back-link {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: clamp(0.75rem, 3vw, 1.875rem);
 }
 
 .back-link span {
-  font-size: var(--text-P);
+  font-size: var(--text-body);
   font-weight: bold;
   color: var(--primaria);
 }
 
 .back-link svg {
-  width: 25px;
-  height: 20px;
+  flex-shrink: 0;
+  width: clamp(1.25rem, 3vw, 1.5625rem);
+  height: 1.25rem;
 }
 
 .back-link:hover {
@@ -34,26 +38,29 @@ main {
   transition: all 0.3s ease;
 }
 
+/* ==============================
+   PERFIL: foto | sobre | adotar
+============================== */
+
 .perfil-animal {
-  display: flex;
-  margin-top: 20px;
-  flex-direction: row;
-  height: 472px;
-  gap: 39px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2.4375rem);
+  margin-top: clamp(1rem, 2vw, 1.25rem);
 }
+
+/* Fotos */
 
 .foto {
   background-color: var(--secundaria);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 540px;
   border-radius: 15px;
-
 }
 
 .foto-principal {
   width: 100%;
-  height: 367.682px;
-  padding: 10px;
+  aspect-ratio: 540 / 368;        /* era height: 367.682px */
+  padding: 0.625rem;
 }
 
 .foto-principal img {
@@ -64,46 +71,34 @@ main {
   object-fit: cover;
 }
 
-.foto-principal img:hover {
-  transform: scale(1.02);
-  opacity: 0.8;
-  transition: all 0.3s ease;
-}
-
 .fotos {
   cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 5px;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(0.5rem, 1.5vw, 0.9375rem);
+  margin-top: 0.3125rem;
+  padding: 0.625rem;
 }
 
 .fotos img {
-  width: 116px;
-  height: 79.664px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 116 / 80;         /* era 116 x 79.66px */
   border-radius: 15px;
   object-fit: cover;
 }
 
-.fotos img:hover {
-  transform: scale(1.05);
-  opacity: 0.8;
-  transition: all 0.3s ease;
-}
+/* Sobre o animal */
 
 .sobre {
-  width: 500px;
-  margin-top: 40px;
+  margin-top: clamp(1rem, 3vw, 2.5rem);
 }
 
 .nome-animal {
   display: flex;
   align-items: center;
   justify-content: left;
-  margin-bottom: 30px;
+  margin-bottom: clamp(1rem, 2.5vw, 1.875rem);
 }
 
 .sobre h1 {
@@ -113,21 +108,22 @@ main {
 
 .pills {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: left;
-  flex-direction: row;
-  gap: 10px;
-  margin-bottom: 30px;
+  gap: 0.625rem;
+  margin-bottom: clamp(1rem, 2.5vw, 1.875rem);
 }
 
 .pills button {
+  min-width: 4.6875rem;
+  height: 2.5rem;
+  padding: 0 0.75rem;
   background-color: var(--secundaria);
   border: 1px solid var(--secundaria);
   border-radius: 15px;
-
-  width: 75px;
-  height: 40px;
-  font-size: var(--text-P);
+  font-family: inherit;
+  font-size: var(--text-body);
   font-weight: 600;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -135,70 +131,79 @@ main {
 .descricao h2 {
   font-size: var(--text-h2);
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .descricao p {
-  font-size: var(--text-P);
+  font-size: var(--text-body);
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: clamp(1rem, 2.5vw, 1.875rem);
 }
+
+/* Cards de adotar / ajudar */
 
 .adotar {
   display: flex;
   flex-direction: column;
 }
 
-.adotarcard {
+.adotarcard,
+.transformar {
   background-color: var(--secundaria);
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 20px;
-  height: 238.02px;
+  padding: clamp(1rem, 2vw, 1.25rem);   /* sem altura fixa: o card cresce com o texto */
 }
 
-#queroadt {
-  font-size: 15px;
+.transformar {
+  margin-top: clamp(1rem, 2.5vw, 2rem);
+}
+
+#queroadt,
+.queroadt {
+  font-size: 0.9375rem;
   font-weight: 500;
   color: var(--text-secundaria);
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .adotarcard h1 {
   font-size: var(--text-h2);
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
-.adotarcard svg {
+.transformar h1 {
+  font-size: var(--text-h2);
+  font-weight: bold;
+  margin-bottom: 0.3125rem;
+}
+
+.adotarcard svg,
+.transformar svg {
   float: left;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
-.adotarcard p {
-  font-size: var(--text-P);
+.adotarcard p,
+.transformar p {
+  font-size: var(--text-body);
   line-height: 1.2;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
-
-.adotarcard button {
-  margin-bottom: 5px;
+.adotarcard button,
+.transformar button {
   width: 100%;
+  min-height: 1.875rem;            /* era height: 30px */
+  margin-bottom: 0.3125rem;
   text-align: center;
-  font-size: var(--text-P);
+  font-family: inherit;
+  font-size: var(--text-body);
   font-weight: bold;
   border-radius: 15px;
-  height: 30px;
   cursor: pointer;
 }
-
-.adotarcard button:hover {
-  opacity: 0.8;
-  transform: scale(1.02);
-  transition: all 0.3s ease;
-}
-
 
 #adotar {
   background-color: var(--primaria);
@@ -212,62 +217,15 @@ main {
   border: none;
 }
 
-
-.transformar {
-  margin-top: 32px;
-  background-color: var(--secundaria);
-  border-radius: 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 20px;
-  height: 200px;
-}
-
-.transformar h1 {
-  font-size: var(--text-h2);
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.transformar svg {
-  float: left;
-  margin-right: 10px;
-
-
-}
-
-.transformar p {
-  font-size: var(--text-P);
-  line-height: 1.2;
-  margin-bottom: 10px;
-}
-
-
-.transformar button {
-  margin-bottom: 5px;
-  width: 100%;
-  text-align: center;
-  font-size: var(--text-P);
-  font-weight: bold;
-  border-radius: 15px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.transformar button:hover {
-  opacity: 0.8;
-  transform: scale(1.02);
-  transition: all 0.3s ease;
-}
-
 #ajudar {
   background-color: var(--primaria);
   color: var(--fundo);
   border: none;
 }
 
-
-
-
+/* ==============================
+   DETALHES (porte, idade, sexo, castrado)
+============================== */
 
 .details-card {
   display: grid;
@@ -275,8 +233,8 @@ main {
   background-color: var(--cards);
   border: 1px solid var(--secundaria);
   border-radius: 15px;
-  padding: 20px;
-  margin-top: 20px;
+  padding: clamp(1rem, 2vw, 1.25rem);
+  margin-top: clamp(1rem, 2vw, 1.25rem);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -285,17 +243,18 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
+  text-align: center;
 }
 
 .detail svg {
-  width: 30px;
-  height: 30px;
+  width: clamp(1.5rem, 4vw, 1.875rem);
+  height: clamp(1.5rem, 4vw, 1.875rem);
 }
 
 .detail h3,
 .detail .value {
-  font-size: var(--text-P);
+  font-size: var(--text-body);
 }
 
 .detail h3 {
@@ -306,25 +265,29 @@ main {
   border-right: 1px solid black;
 }
 
+/* ==============================
+   GALERIA
+============================== */
+
 .gallery-card {
   background-color: var(--cards);
   border: 1px solid var(--secundaria);
   border-radius: 15px;
-  padding: 20px;
-  margin-top: 20px;
+  padding: clamp(1rem, 2vw, 1.25rem);
+  margin-top: clamp(1rem, 2vw, 1.25rem);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .gallery-card h2 {
   font-size: var(--text-h3);
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  gap: clamp(0.5rem, 1.5vw, 0.625rem);
 }
 
 .gallery-photo {
@@ -346,8 +309,96 @@ main {
   display: block;
 }
 
-.gallery-card .gallery-photo:hover {
-  transform: scale(1.02);
-  opacity: 0.8;
-  transition: all 0.3s ease;
+/* hover só em quem tem mouse: no toque o scale estoura a largura */
+@media (hover: hover) {
+  .foto-principal img:hover {
+    transform: scale(1.02);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+
+  .fotos img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+
+  .adotarcard button:hover,
+  .transformar button:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+
+  .gallery-card .gallery-photo:hover {
+    transform: scale(1.02);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+  }
+}
+
+
+@media (max-width: 1100px) {
+  .perfil-animal {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .adotar {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1rem, 3vw, 2rem);
+  }
+
+  .transformar {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media (max-width: 725px) {
+  .perfil-animal {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre {
+    margin-top: 0;
+  }
+
+  .adotar {
+    grid-template-columns: 1fr;
+  }
+
+  .adotarcard button,
+  .transformar button {
+    min-height: 2.75rem;          
+  }
+
+  
+  .details-card {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
+
+  .detail-idade {
+    border-right: none;
+  }
+
+  .detail-porte,
+  .detail-idade {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
