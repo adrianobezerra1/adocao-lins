@@ -19,7 +19,7 @@ article {
   position: relative;
   z-index: 2;
   margin: 0;
-  padding: 25px clamp(16px, 5vw, 80px);
+  padding: 25px clamp(16px, 5vw, 80px) 6%;
 }
 
 .fundo {
@@ -333,7 +333,6 @@ article {
   justify-content: space-between;
 
   width: 100%;
-
 
   height: auto;
   min-height: 120px;
