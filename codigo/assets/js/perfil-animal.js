@@ -64,7 +64,7 @@ function perfil(animal) {
     thumbsContainer.innerHTML = animal.fotos.map(function (foto, i) {
         return `
             <div class="thumb" data-index ="${i}">
-                <img src="${foto}" alt="foto ${i + 1}">
+                <img src="${foto}" alt="Foto ${i + 1} de ${animal.nome}">
             </div>
         `;
     }).join('')
@@ -84,7 +84,7 @@ function perfil(animal) {
     galeriaGrid.innerHTML = animal.fotos.map(function (foto, i) {
         return `
             <div class="gallery-photo">
-                <img src="${foto}" alt="foto ${i + 1}">
+                <img src="${foto}" alt="Foto ${i + 1} de ${animal.nome}">
             </div>
         `;
     }).join('');
