@@ -110,7 +110,7 @@ Confira as contribuições de cada integrante no projeto.
 <!-- COMMITS-START -->
 | Integrante | Commits | Arquivos únicos | Alterações em arquivos | Linhas adicionadas | Linhas removidas |
 | :--- | ---: | ---: | ---: | ---: | ---: |
-| Mateus De Oliveira Pires | 145 | 535 | 2362 | +31349 | -30758 |
+| Mateus De Oliveira Pires | 146 | 535 | 2365 | +31358 | -30765 |
 | Anderson Lucas | 19 | 19 | 50 | +4810 | -2697 |
 | Luis Henrique | 2 | 9 | 9 | +542 | -769 |
 | Murillo Franca | 3 | 2 | 4 | +79 | -28 |
